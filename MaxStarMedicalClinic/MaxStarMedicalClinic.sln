@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentationLayer", "PresentationLayer\PresentationLayer.csproj", "{6B36BD17-5ECB-494A-82F2-C50AFE05F341}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicLayer", "LogicLayer\LogicLayer.csproj", "{C4EDA294-0EA7-4C75-8F45-BE1050C724B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{D3DA5E80-FCC7-477A-92F5-4FB9D0EFD482}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{6B36BD17-5ECB-494A-82F2-C50AFE05F341}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B36BD17-5ECB-494A-82F2-C50AFE05F341}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B36BD17-5ECB-494A-82F2-C50AFE05F341}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4EDA294-0EA7-4C75-8F45-BE1050C724B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4EDA294-0EA7-4C75-8F45-BE1050C724B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4EDA294-0EA7-4C75-8F45-BE1050C724B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4EDA294-0EA7-4C75-8F45-BE1050C724B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3DA5E80-FCC7-477A-92F5-4FB9D0EFD482}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3DA5E80-FCC7-477A-92F5-4FB9D0EFD482}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3DA5E80-FCC7-477A-92F5-4FB9D0EFD482}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3DA5E80-FCC7-477A-92F5-4FB9D0EFD482}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,1 +1,2 @@
 C:\Users\asus\Documents\GitHub\kupatHolim\MaxStarMedicalClinic\PresentationLayer\bin\Debug\PresentationLayer.exe.config
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\PresentationLayer\bin\Debug\PresentationLayer.exe.config
