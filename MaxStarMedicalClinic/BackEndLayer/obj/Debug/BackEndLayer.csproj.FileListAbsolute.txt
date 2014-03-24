@@ -1,0 +1,5 @@
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\BackEndLayer\bin\Debug\BackEndLayer.dll.config
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\BackEndLayer\bin\Debug\BackEndLayer.dll
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\BackEndLayer\bin\Debug\BackEndLayer.pdb
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\BackEndLayer\obj\Debug\BackEndLayer.dll
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\BackEndLayer\obj\Debug\BackEndLayer.pdb

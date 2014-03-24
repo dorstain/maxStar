@@ -10,3 +10,15 @@ C:\Users\asus\Documents\GitHub\maxStar\MaxStarMedicalClinic\MainProg\obj\Debug\M
 C:\Users\asus\Documents\GitHub\maxStar\MaxStarMedicalClinic\MainProg\bin\Debug\DataAccessLayer.dll
 C:\Users\asus\Documents\GitHub\maxStar\MaxStarMedicalClinic\MainProg\bin\Debug\LogicLayer.dll
 C:\Users\asus\Documents\GitHub\maxStar\MaxStarMedicalClinic\MainProg\bin\Debug\PresentationLayer.dll
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\MainProg\bin\Debug\MainProg.exe.config
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\MainProg\obj\Debug\MainProg.exe
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\MainProg\obj\Debug\MainProg.pdb
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\MainProg\bin\Debug\MainProg.exe
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\MainProg\bin\Debug\MainProg.pdb
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\MainProg\bin\Debug\DataAccessLayer.dll
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\MainProg\bin\Debug\LogicLayer.dll
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\MainProg\bin\Debug\PresentationLayer.dll
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\MainProg\bin\Debug\DataAccessLayer.pdb
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\MainProg\bin\Debug\LogicLayer.pdb
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\MainProg\bin\Debug\PresentationLayer.pdb
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\MainProg\obj\Debug\MainProg.csprojResolveAssemblyReference.cache
