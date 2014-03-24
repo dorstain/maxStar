@@ -15,6 +15,8 @@ namespace BackEndLayer
         private char gender;
         private int age;
 
+
+
         public Patient(String id, String firstName, String lastName, String mainDoctor, int age, char gender){
             this.id = id;
             this.firstName = firstName;
