@@ -1,0 +1,6 @@
+C:\Users\asus\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\bin\Debug\DataAccessLayer.exe.config
+C:\Users\asus\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\bin\Debug\DataAccessLayer.exe
+C:\Users\asus\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\asus\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\asus\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\obj\Debug\DataAccessLayer.exe
+C:\Users\asus\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PresentationLayer
+namespace DataAccessLayer
 {
-    class Program
+    class Linq_DAL
     {
-        static void Main(string[] args)
+        static void Main(String[]args)
         {
+
         }
     }
 }

@@ -8,6 +8,10 @@ namespace LogicLayer
 {
     class Doctor
     {
+        static void Main(String[] args)
+        {
+
+        }
         private String id;
         private String firstName;
         private String lastName;
