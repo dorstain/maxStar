@@ -8,11 +8,6 @@ namespace PresentationLayer
 {
     public class PL
     {
-        static void Main(String[] args)
-        {
-
-        }
-
         public void run()
         {
             Console.WriteLine("Please choose what to do:"+
@@ -20,7 +15,7 @@ namespace PresentationLayer
                 "\n\r 2. Manage Patients"+
                 "\n\r 3. Manage Treatments");
             String s=Console.ReadLine();
-            Console.WriteLine("What would u like to manage?" +
+            Console.WriteLine("What would you like to manage?" +
                     "\n\r 1. Add" +
                     "\n\r 2. Remove" +
                     "\n\r 3. Modify" +

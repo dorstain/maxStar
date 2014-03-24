@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccessLayer
+namespace LogicLayer
 {
-    class Linq_DAL
+    class Program
     {
 
     }

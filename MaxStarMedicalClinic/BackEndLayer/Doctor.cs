@@ -4,14 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LogicLayer
+namespace BackEndLayer
 {
     class Doctor
     {
-        static void Main(String[] args)
-        {
-
-        }
         private String id;
         private String firstName;
         private String lastName;
