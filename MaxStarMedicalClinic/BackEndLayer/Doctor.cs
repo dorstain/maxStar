@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace BackEndLayer
 {
-    class Doctor
+    public class Doctor
     {
         private String id;
-        private String firstName;
-        private String lastName;
-        private int salary;
-        private char gender;
+        public String firstName;
+        public String lastName;
+        public int salary;
+        public char gender;
 
         public Doctor(String id, String firstName, String lastName, int salary, char gender)
         {
@@ -23,6 +23,16 @@ namespace BackEndLayer
             this.gender = gender;
         }
 
-
+        public string ID
+        {
+            get
+            {
+                return id;
+            }
+            set
+            {
+                id = value;
+            }
+        }
     }
 }

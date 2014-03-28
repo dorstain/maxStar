@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BackEndLayer
 {
-    class Patient
+    public class Patient
     {
         private String id;
         private String firstName;
