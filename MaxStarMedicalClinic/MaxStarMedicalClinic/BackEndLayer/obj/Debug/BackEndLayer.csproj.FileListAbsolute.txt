@@ -1,0 +1,18 @@
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\BackEndLayer\bin\Debug\BackEndLayer.dll.config
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\BackEndLayer\bin\Debug\BackEndLayer.dll
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\BackEndLayer\bin\Debug\BackEndLayer.pdb
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\BackEndLayer\obj\Debug\BackEndLayer.dll
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\BackEndLayer\obj\Debug\BackEndLayer.pdb
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\BackEndLayer\obj\Debug\BackEndLayer.csprojResolveAssemblyReference.cache
+C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\BackEndLayer\bin\Debug\BackEndLayer.dll.config
+C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\BackEndLayer\bin\Debug\BackEndLayer.dll
+C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\BackEndLayer\bin\Debug\BackEndLayer.pdb
+C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\BackEndLayer\obj\Debug\BackEndLayer.csprojResolveAssemblyReference.cache
+C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\BackEndLayer\obj\Debug\BackEndLayer.dll
+C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\BackEndLayer\obj\Debug\BackEndLayer.pdb
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\BackEndLayer\bin\Debug\BackEndLayer.dll.config
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\BackEndLayer\bin\Debug\BackEndLayer.dll
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\BackEndLayer\bin\Debug\BackEndLayer.pdb
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\BackEndLayer\obj\Debug\BackEndLayer.csprojResolveAssemblyReference.cache
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\BackEndLayer\obj\Debug\BackEndLayer.dll
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\BackEndLayer\obj\Debug\BackEndLayer.pdb
