@@ -66,3 +66,5 @@ C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMe
 C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\MainProg\bin\Debug\PresentationLayer.pdb
 C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\MainProg\bin\Debug\BackEndLayer.pdb
 C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\MainProg\obj\Debug\MainProg.csprojResolveAssemblyReference.cache
+C:\Users\asus\Documents\GitHub\maxStar\MaxStarMedicalClinic\MainProg\bin\Debug\BackEndLayer.dll
+C:\Users\asus\Documents\GitHub\maxStar\MaxStarMedicalClinic\MainProg\bin\Debug\BackEndLayer.pdb

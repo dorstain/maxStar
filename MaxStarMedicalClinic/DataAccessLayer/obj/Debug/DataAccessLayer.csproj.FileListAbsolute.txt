@@ -36,3 +36,5 @@ C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMe
 C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
 C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\asus\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\bin\Debug\BackEndLayer.dll
+C:\Users\asus\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\bin\Debug\BackEndLayer.pdb

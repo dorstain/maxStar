@@ -345,6 +345,7 @@ namespace PresentationLayer
                     Console.WriteLine("Illegal id, try again.");
                 id = Console.ReadLine();
             }
+            Console.WriteLine("Name must start with Capital letter. Only A-Z, a-z and '-' is allowed.");
             Console.Write("Please enter the doctor's first name: ");
             String first = Console.ReadLine();
             while (!m.isLegalName(first))
@@ -393,6 +394,7 @@ namespace PresentationLayer
                 Console.WriteLine("The doctor does not exists, try again.");
                 id = Console.ReadLine();
             }
+            Console.WriteLine("Name must start with Capital letter. Only A-Z, a-z and '-' is allowed.");
             Console.Write("Please enter the doctor's first name: ");
             String first = Console.ReadLine();
             while (!m.isLegalName(first) && !first.Equals("-1"))
@@ -443,6 +445,7 @@ namespace PresentationLayer
                     Console.WriteLine("Illegal id, try again.");
                 id = Console.ReadLine();
             }
+            Console.WriteLine("Name must start with Capital letter. Only A-Z, a-z and '-' is allowed.");
             Console.Write("Please enter the patient's first name: ");
             String first = Console.ReadLine();
             while (!m.isLegalName(first))
@@ -499,6 +502,7 @@ namespace PresentationLayer
                 Console.WriteLine("The patient does not exists, try again.");
                 id = Console.ReadLine();
             }
+            Console.WriteLine("Name must start with Capital letter. Only A-Z, a-z and '-' is allowed.");
             Console.Write("Please enter the patient's first name: ");
             String first = Console.ReadLine();
             while (!m.isLegalName(first) && !first.Equals("-1"))

@@ -165,10 +165,9 @@ namespace LogicLayer
             }
             for (int i = 1; i < s.Length && ans; i++)
             {
-                if (other.IndexOf(s[i]) < 0)
+                if ((first+other).IndexOf(s[i]) < 0)
                 {
                     ans = false;
-                    Console.WriteLine(s[i]);
                 }
             }
             return ans;
