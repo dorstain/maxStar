@@ -10,3 +10,37 @@ C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\LogicLayer\bin\Debug
 C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\LogicLayer\obj\Debug\LogicLayer.csprojResolveAssemblyReference.cache
 C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\LogicLayer\obj\Debug\LogicLayer.dll
 C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\LogicLayer\obj\Debug\LogicLayer.pdb
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\LogicLayer\bin\Debug\BackEndLayer.dll
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\LogicLayer\bin\Debug\BackEndLayer.pdb
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\LogicLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\LogicLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\LogicLayer\bin\Debug\LogicLayer.dll.config
+C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\LogicLayer\bin\Debug\LogicLayer.dll
+C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\LogicLayer\bin\Debug\LogicLayer.pdb
+C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\LogicLayer\bin\Debug\BackEndLayer.dll
+C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\LogicLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\LogicLayer\bin\Debug\BackEndLayer.pdb
+C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\LogicLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\LogicLayer\obj\Debug\LogicLayer.csprojResolveAssemblyReference.cache
+C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\LogicLayer\obj\Debug\LogicLayer.dll
+C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\LogicLayer\obj\Debug\LogicLayer.pdb
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\LogicLayer\bin\Debug\LogicLayer.dll.config
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\LogicLayer\bin\Debug\LogicLayer.dll
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\LogicLayer\bin\Debug\LogicLayer.pdb
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\LogicLayer\bin\Debug\BackEndLayer.dll
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\LogicLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\LogicLayer\bin\Debug\BackEndLayer.pdb
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\LogicLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\LogicLayer\obj\Debug\LogicLayer.csprojResolveAssemblyReference.cache
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\LogicLayer\obj\Debug\LogicLayer.dll
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\LogicLayer\obj\Debug\LogicLayer.pdb
+C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\LogicLayer\bin\Debug\LogicLayer.dll.config
+C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\LogicLayer\bin\Debug\LogicLayer.dll
+C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\LogicLayer\bin\Debug\LogicLayer.pdb
+C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\LogicLayer\bin\Debug\BackEndLayer.dll
+C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\LogicLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\LogicLayer\bin\Debug\BackEndLayer.pdb
+C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\LogicLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\LogicLayer\obj\Debug\LogicLayer.csprojResolveAssemblyReference.cache
+C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\LogicLayer\obj\Debug\LogicLayer.dll
+C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\LogicLayer\obj\Debug\LogicLayer.pdb

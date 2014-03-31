@@ -6,9 +6,20 @@ using System.Threading.Tasks;
 
 namespace BackEndLayer
 {
-    class Doctor
+    public class Doctor
     {
         private String id;
+        public string ID
+        {
+            get
+            {
+                return id;
+            }
+            set
+            {
+                id = value;
+            }
+        }
         private String firstName;
         private String lastName;
         private int salary;
@@ -23,6 +34,29 @@ namespace BackEndLayer
             this.gender = gender;
         }
 
+        public String toString()
+        {
+            return " id: " + id + "\n name: " + firstName +" "+ lastName + "\n salary: " + salary + "\n gender: " + gender;
+        }
 
+        public void mergeInfo(Doctor d)
+        {
+            if (!d.firstName.Equals("-1"))
+            {
+                firstName = d.firstName;
+            }
+            if (!d.lastName.Equals("-1"))
+            {
+                lastName = d.lastName;
+            }
+            if (d.salary!=-1)
+            {
+                salary = d.salary;
+            }
+            if (d.gender!='1')
+            {
+                gender = d.gender;
+            }
+        }
     }
 }

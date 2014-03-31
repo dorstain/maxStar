@@ -22,3 +22,47 @@ C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\MainProg\bin\Debug\D
 C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\MainProg\bin\Debug\LogicLayer.pdb
 C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\MainProg\bin\Debug\PresentationLayer.pdb
 C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\MainProg\obj\Debug\MainProg.csprojResolveAssemblyReference.cache
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\MainProg\bin\Debug\BackEndLayer.dll
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\MainProg\bin\Debug\BackEndLayer.pdb
+C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\MainProg\bin\Debug\MainProg.exe.config
+C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\MainProg\bin\Debug\MainProg.exe
+C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\MainProg\bin\Debug\MainProg.pdb
+C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\MainProg\bin\Debug\DataAccessLayer.dll
+C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\MainProg\bin\Debug\LogicLayer.dll
+C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\MainProg\bin\Debug\PresentationLayer.dll
+C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\MainProg\bin\Debug\BackEndLayer.dll
+C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\MainProg\bin\Debug\DataAccessLayer.pdb
+C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\MainProg\bin\Debug\LogicLayer.pdb
+C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\MainProg\bin\Debug\PresentationLayer.pdb
+C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\MainProg\bin\Debug\BackEndLayer.pdb
+C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\MainProg\obj\Debug\MainProg.csprojResolveAssemblyReference.cache
+C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\MainProg\obj\Debug\MainProg.exe
+C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\MainProg\obj\Debug\MainProg.pdb
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\MainProg\bin\Debug\MainProg.exe.config
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\MainProg\obj\Debug\MainProg.exe
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\MainProg\obj\Debug\MainProg.pdb
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\MainProg\bin\Debug\MainProg.exe
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\MainProg\bin\Debug\MainProg.pdb
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\MainProg\bin\Debug\DataAccessLayer.dll
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\MainProg\bin\Debug\LogicLayer.dll
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\MainProg\bin\Debug\PresentationLayer.dll
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\MainProg\bin\Debug\BackEndLayer.dll
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\MainProg\bin\Debug\DataAccessLayer.pdb
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\MainProg\bin\Debug\LogicLayer.pdb
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\MainProg\bin\Debug\PresentationLayer.pdb
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\MainProg\bin\Debug\BackEndLayer.pdb
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\MainProg\obj\Debug\MainProg.csprojResolveAssemblyReference.cache
+C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\MainProg\bin\Debug\MainProg.exe.config
+C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\MainProg\obj\Debug\MainProg.exe
+C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\MainProg\obj\Debug\MainProg.pdb
+C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\MainProg\bin\Debug\MainProg.exe
+C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\MainProg\bin\Debug\MainProg.pdb
+C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\MainProg\bin\Debug\DataAccessLayer.dll
+C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\MainProg\bin\Debug\LogicLayer.dll
+C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\MainProg\bin\Debug\PresentationLayer.dll
+C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\MainProg\bin\Debug\BackEndLayer.dll
+C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\MainProg\bin\Debug\DataAccessLayer.pdb
+C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\MainProg\bin\Debug\LogicLayer.pdb
+C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\MainProg\bin\Debug\PresentationLayer.pdb
+C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\MainProg\bin\Debug\BackEndLayer.pdb
+C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\MainProg\obj\Debug\MainProg.csprojResolveAssemblyReference.cache
