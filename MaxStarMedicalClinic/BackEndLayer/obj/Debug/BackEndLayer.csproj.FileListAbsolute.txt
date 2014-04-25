@@ -22,3 +22,9 @@ C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMe
 C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\BackEndLayer\obj\Debug\BackEndLayer.csprojResolveAssemblyReference.cache
 C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\BackEndLayer\obj\Debug\BackEndLayer.dll
 C:\Users\asus\Desktop\maxStar-yossi\maxStar-yossi\MaxStarMedicalClinic\MaxStarMedicalClinic\BackEndLayer\obj\Debug\BackEndLayer.pdb
+C:\Users\vemo\Desktop\MaxStarMedicalClinic1\MaxStarMedicalClinic\BackEndLayer\bin\Debug\BackEndLayer.dll.config
+C:\Users\vemo\Desktop\MaxStarMedicalClinic1\MaxStarMedicalClinic\BackEndLayer\bin\Debug\BackEndLayer.dll
+C:\Users\vemo\Desktop\MaxStarMedicalClinic1\MaxStarMedicalClinic\BackEndLayer\bin\Debug\BackEndLayer.pdb
+C:\Users\vemo\Desktop\MaxStarMedicalClinic1\MaxStarMedicalClinic\BackEndLayer\obj\Debug\BackEndLayer.csprojResolveAssemblyReference.cache
+C:\Users\vemo\Desktop\MaxStarMedicalClinic1\MaxStarMedicalClinic\BackEndLayer\obj\Debug\BackEndLayer.dll
+C:\Users\vemo\Desktop\MaxStarMedicalClinic1\MaxStarMedicalClinic\BackEndLayer\obj\Debug\BackEndLayer.pdb

@@ -152,6 +152,13 @@ namespace LogicLayer
             return db.GetAllTreatmentsByDoctorID(id);
         }
 
+        // --------------- User Methods -----------------
+
+        public bool validate(String user, String pass)
+        {
+            return db.validate(user, pass);
+        }
+
         // --------------- General Methods -----------------
 
         public bool isLegalName(String s)
