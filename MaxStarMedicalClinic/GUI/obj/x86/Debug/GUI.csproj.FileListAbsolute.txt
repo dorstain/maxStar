@@ -1,0 +1,11 @@
+C:\Users\DOR\Desktop\MaxStarMedicalClinic\GUI\bin\Debug\GUI.exe
+C:\Users\DOR\Desktop\MaxStarMedicalClinic\GUI\bin\Debug\GUI.pdb
+C:\Users\DOR\Desktop\MaxStarMedicalClinic\GUI\obj\x86\Debug\MainWindow.baml
+C:\Users\DOR\Desktop\MaxStarMedicalClinic\GUI\obj\x86\Debug\MainWindow.g.cs
+C:\Users\DOR\Desktop\MaxStarMedicalClinic\GUI\obj\x86\Debug\App.g.cs
+C:\Users\DOR\Desktop\MaxStarMedicalClinic\GUI\obj\x86\Debug\GUI_MarkupCompile.cache
+C:\Users\DOR\Desktop\MaxStarMedicalClinic\GUI\obj\x86\Debug\GUI.g.resources
+C:\Users\DOR\Desktop\MaxStarMedicalClinic\GUI\obj\x86\Debug\GUI.Properties.Resources.resources
+C:\Users\DOR\Desktop\MaxStarMedicalClinic\GUI\obj\x86\Debug\GUI.csproj.GenerateResource.Cache
+C:\Users\DOR\Desktop\MaxStarMedicalClinic\GUI\obj\x86\Debug\GUI.exe
+C:\Users\DOR\Desktop\MaxStarMedicalClinic\GUI\obj\x86\Debug\GUI.pdb

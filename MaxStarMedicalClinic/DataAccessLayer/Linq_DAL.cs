@@ -13,6 +13,7 @@ namespace DataAccessLayer
         public List<Patient> patients;
         public List<Visit> visits;
         public List<Treatment> treatments;
+        public List<User> users;
 
         public Linq_DAL()
         {
@@ -68,6 +69,14 @@ namespace DataAccessLayer
             treatments.Add(new Treatment("823456789", "18/03/2014", "25/03/2014", "111111116", "hyper glycom", "2 hydra"));
             treatments.Add(new Treatment("923456789", "18/03/2005", "25/03/2014", "111111112", "hyper glycom", "2 hydra"));
             treatments.Add(new Treatment("103456789", "18/03/2014", "25/03/2014", "111111113", "hyper glycom", "2 hydra"));
+
+            //users
+            users = new List<User>();
+
+            users.Add(new User("206295131", "ccccccbgbfh", 0));
+            users.Add(new User("123456789", "ccccccbgbfh", 1));
+            users.Add(new User("151515151", "ccccccbgbfh", 2));
+
         }
 
         //----------- DOCTOR METHODS -------------
@@ -341,6 +350,18 @@ namespace DataAccessLayer
 
             return result.ToList<Treatment>();
         }
+
+        //----------- USERS METHODS -------------
+
+        public bool validate(String user, String pass)
+        {
+            var result= from u in users
+                        where u.id.Equals(user) && u.password.Equals(pass)
+                        select u;
+
+            return ((result.ToArray()).Length > 0); //found matching user
+        }
+
 
     }
 }

@@ -16,7 +16,7 @@ namespace MainProg
             Linq_DAL linq = new Linq_DAL();
             Manager m = new Manager(linq);
             PL pl = new PL(m);
-            pl.Run();
+            
         }
     }
 }
