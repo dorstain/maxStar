@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Add" Height="478" Width="631">
     <Grid>
-        <TextBox Height="26" HorizontalAlignment="Left" Margin="68,24,0,0" Name="Input_PatientID" VerticalAlignment="Top" Width="109" TextChanged="Input_PatientID_TextChanged" />
+        <TextBox Height="26" HorizontalAlignment="Left" Margin="68,24,0,0" Name="Input_PatientID" VerticalAlignment="Top" Width="109" />
         <TextBlock Height="23" HorizontalAlignment="Left" Margin="8,25,0,0" Name="textBlock1" Text="Patient ID:" VerticalAlignment="Top" />
         <TextBox Height="23" HorizontalAlignment="Left" Margin="63,89,0,0" Name="Patient_Name" VerticalAlignment="Top" Width="84" IsReadOnly="True" TextChanged="Patient_Name_TextChanged" />
         <TextBlock Height="23" HorizontalAlignment="Left" Margin="23,90,0,0" Name="textBlock2" Text="Name:" VerticalAlignment="Top" />

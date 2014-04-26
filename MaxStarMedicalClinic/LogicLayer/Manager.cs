@@ -47,7 +47,7 @@ namespace LogicLayer
         {
             return db.GetAllDoctorsPatients(id);
         }
-
+        
         public bool DoctorAlreadyExists(String id)
         {
             return db.DoctorAlreadyExists(id);

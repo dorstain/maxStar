@@ -26,7 +26,7 @@ namespace CoolGUI.Doctor
 
         private void Input_PatientID_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            this = 
         }
 
         private void Search_PatientID(object sender, RoutedEventArgs e)
