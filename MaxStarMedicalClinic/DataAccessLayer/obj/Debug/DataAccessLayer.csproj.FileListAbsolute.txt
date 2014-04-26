@@ -54,3 +54,11 @@ C:\Users\DOR\Desktop\MaxStarMedicalClinic\DataAccessLayer\bin\Debug\BackEndLayer
 C:\Users\DOR\Desktop\MaxStarMedicalClinic\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
 C:\Users\DOR\Desktop\MaxStarMedicalClinic\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\DOR\Desktop\MaxStarMedicalClinic\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\bin\Debug\BackEndLayer.dll
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\bin\Debug\BackEndLayer.pdb
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

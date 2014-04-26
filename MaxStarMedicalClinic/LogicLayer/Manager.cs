@@ -154,7 +154,7 @@ namespace LogicLayer
 
         // --------------- User Methods -----------------
 
-        public bool validate(String user, String pass)
+        public int validate(String user, String pass)
         {
             return db.validate(user, pass);
         }

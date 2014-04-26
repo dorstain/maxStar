@@ -1,5 +1,4 @@
 C:\Users\asus\Documents\GitHub\kupatHolim\MaxStarMedicalClinic\PresentationLayer\bin\Debug\PresentationLayer.exe.config
-C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\PresentationLayer\bin\Debug\PresentationLayer.exe.config
 C:\Users\asus\Documents\GitHub\maxStar\MaxStarMedicalClinic\PresentationLayer\obj\Debug\PresentationLayer.csprojResolveAssemblyReference.cache
 C:\Users\asus\Documents\GitHub\maxStar\MaxStarMedicalClinic\PresentationLayer\bin\Debug\PresentationLayer.pdb
 C:\Users\asus\Documents\GitHub\maxStar\MaxStarMedicalClinic\PresentationLayer\obj\Debug\PresentationLayer.pdb
@@ -88,3 +87,17 @@ C:\Users\DOR\Desktop\MaxStarMedicalClinic\PresentationLayer\bin\Debug\DataAccess
 C:\Users\DOR\Desktop\MaxStarMedicalClinic\PresentationLayer\obj\Debug\PresentationLayer.csprojResolveAssemblyReference.cache
 C:\Users\DOR\Desktop\MaxStarMedicalClinic\PresentationLayer\obj\Debug\PresentationLayer.dll
 C:\Users\DOR\Desktop\MaxStarMedicalClinic\PresentationLayer\obj\Debug\PresentationLayer.pdb
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\PresentationLayer\bin\Debug\PresentationLayer.dll.config
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\PresentationLayer\bin\Debug\PresentationLayer.dll
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\PresentationLayer\bin\Debug\PresentationLayer.pdb
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\PresentationLayer\bin\Debug\BackEndLayer.dll
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\PresentationLayer\bin\Debug\CoolGUI.exe
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\PresentationLayer\bin\Debug\LogicLayer.dll
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\PresentationLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\PresentationLayer\bin\Debug\BackEndLayer.pdb
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\PresentationLayer\bin\Debug\LogicLayer.pdb
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\PresentationLayer\bin\Debug\CoolGUI.pdb
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\PresentationLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\PresentationLayer\obj\Debug\PresentationLayer.csprojResolveAssemblyReference.cache
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\PresentationLayer\obj\Debug\PresentationLayer.dll
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\PresentationLayer\obj\Debug\PresentationLayer.pdb

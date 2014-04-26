@@ -9,16 +9,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CoolGUI
+namespace BackEndLayer
 {
     /// <summary>
-    /// Interaction logic for DoctorScreen.xaml
+    /// Interaction logic for Doctor.xaml
     /// </summary>
-    public partial class DoctorScreen : Window
+    public partial class Doctor : UserControl
     {
-        public DoctorScreen()
+        public Doctor()
         {
             InitializeComponent();
         }

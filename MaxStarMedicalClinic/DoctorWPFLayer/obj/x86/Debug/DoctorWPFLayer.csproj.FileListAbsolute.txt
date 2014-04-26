@@ -1,0 +1,10 @@
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\DoctorWPFLayer\obj\x86\Debug\DoctorWPFLayer.csprojResolveAssemblyReference.cache
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\DoctorWPFLayer\obj\x86\Debug\Add.baml
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\DoctorWPFLayer\obj\x86\Debug\MainWindow.baml
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\DoctorWPFLayer\obj\x86\Debug\Add.g.cs
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\DoctorWPFLayer\obj\x86\Debug\MainWindow.g.cs
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\DoctorWPFLayer\obj\x86\Debug\App.g.cs
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\DoctorWPFLayer\obj\x86\Debug\DoctorWPFLayer_MarkupCompile.cache
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\DoctorWPFLayer\obj\x86\Debug\DoctorWPFLayer.g.resources
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\DoctorWPFLayer\obj\x86\Debug\DoctorWPFLayer.Properties.Resources.resources
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\DoctorWPFLayer\obj\x86\Debug\DoctorWPFLayer.csproj.GenerateResource.Cache

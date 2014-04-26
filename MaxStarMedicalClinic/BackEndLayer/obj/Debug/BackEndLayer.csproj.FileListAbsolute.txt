@@ -28,3 +28,9 @@ C:\Users\vemo\Desktop\MaxStarMedicalClinic1\MaxStarMedicalClinic\BackEndLayer\bi
 C:\Users\vemo\Desktop\MaxStarMedicalClinic1\MaxStarMedicalClinic\BackEndLayer\obj\Debug\BackEndLayer.csprojResolveAssemblyReference.cache
 C:\Users\vemo\Desktop\MaxStarMedicalClinic1\MaxStarMedicalClinic\BackEndLayer\obj\Debug\BackEndLayer.dll
 C:\Users\vemo\Desktop\MaxStarMedicalClinic1\MaxStarMedicalClinic\BackEndLayer\obj\Debug\BackEndLayer.pdb
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\BackEndLayer\bin\Debug\BackEndLayer.dll.config
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\BackEndLayer\bin\Debug\BackEndLayer.dll
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\BackEndLayer\bin\Debug\BackEndLayer.pdb
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\BackEndLayer\obj\Debug\BackEndLayer.csprojResolveAssemblyReference.cache
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\BackEndLayer\obj\Debug\BackEndLayer.dll
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\BackEndLayer\obj\Debug\BackEndLayer.pdb
