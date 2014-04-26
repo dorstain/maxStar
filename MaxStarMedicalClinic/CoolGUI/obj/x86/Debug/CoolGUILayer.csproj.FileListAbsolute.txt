@@ -21,3 +21,5 @@ C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\CoolGUI\bin\Debug\Bac
 C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\CoolGUI\bin\Debug\DataAccessLayer.pdb
 C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\CoolGUI\bin\Debug\LogicLayer.pdb
 C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\CoolGUI\obj\x86\Debug\CoolGUI.pdb
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\CoolGUI\obj\x86\Debug\CoolGUI_MarkupCompile.lref
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\CoolGUI\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs

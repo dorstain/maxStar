@@ -9,6 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using CoolGUI;
 using System;
 using System.Diagnostics;
 using System.Windows;

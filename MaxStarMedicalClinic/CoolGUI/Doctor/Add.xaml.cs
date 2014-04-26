@@ -17,16 +17,11 @@ namespace CoolGUI.Doctor
     /// <summary>
     /// Interaction logic for Add.xaml
     /// </summary>
-    public partial class Add : Window
+    public partial class Add : MainWindow
     {
-        public Add()
+        public Add() 
         {
             InitializeComponent();
-        }
-
-        private void Input_PatientID_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            this = 
         }
 
         private void Search_PatientID(object sender, RoutedEventArgs e)
@@ -39,6 +34,31 @@ namespace CoolGUI.Doctor
                 Age.Text = result.First().age.ToString();
                 Gender.Text = result.First().gender.ToString();
             }
+
+        }
+
+        private void Input_PatientID_TextChanged(object sender, TextChangedEventArgs e)
+        {
+             
+        }
+
+        private void Patient_Name_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void Last_Name_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void Age_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void Gender_TextChanged(object sender, TextChangedEventArgs e)
+        {
 
         }
     }

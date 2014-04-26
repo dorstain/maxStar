@@ -16,7 +16,7 @@ namespace CoolGUI.Doctor
     /// <summary>
     /// Interaction logic for DoctorMain.xaml
     /// </summary>
-    public partial class DoctorMain : Window 
+    public partial class DoctorMain : MainWindow 
     {
 
         public DoctorMain()
