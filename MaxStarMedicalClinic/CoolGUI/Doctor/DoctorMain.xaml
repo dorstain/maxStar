@@ -6,7 +6,7 @@
     <Grid>
         <Button Height="100" Width="100" Name="addButton" Margin="150,0,0,0" Click="Click_Add" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
             <StackPanel Name="add" Width="100" Height="100" Margin="0,0,0,0">
-                <Image Source="C:\Users\DOR\Desktop\ImagesForMax\plus2.jpg" Height="100" Width="100"  Margin="0,0,0,0" />
+                <Image Source="C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\Images\plus.jpg" Height="100" Width="100"  Margin="0,0,0,0" />
             </StackPanel>
         </Button>
     </Grid>
