@@ -14,11 +14,11 @@ using System.Windows.Shapes;
 namespace CoolGUI
 {
     /// <summary>
-    /// Interaction logic for DoctorScreen.xaml
+    /// Interaction logic for PatientScreen.xaml
     /// </summary>
-    public partial class DoctorScreen : Window
+    public partial class PatientScreen : Window
     {
-        public DoctorScreen()
+        public PatientScreen()
         {
             InitializeComponent();
         }

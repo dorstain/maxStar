@@ -4,14 +4,6 @@ C:\Users\asus\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\obj\
 C:\Users\asus\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
 C:\Users\asus\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\bin\Debug\DataAccessLayer.dll
 C:\Users\asus\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\obj\Debug\DataAccessLayer.dll
-C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
-C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\bin\Debug\DataAccessLayer.dll
-C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
-C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
-C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\obj\Debug\DataAccessLayer.dll
-C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
-C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\bin\Debug\BackEndLayer.dll
-C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\bin\Debug\BackEndLayer.pdb
 C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
 C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\asus\Documents\Visual Studio 2010\Projects\MaxStarMedicalClinic\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
@@ -54,3 +46,11 @@ C:\Users\DOR\Desktop\MaxStarMedicalClinic\DataAccessLayer\bin\Debug\BackEndLayer
 C:\Users\DOR\Desktop\MaxStarMedicalClinic\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
 C:\Users\DOR\Desktop\MaxStarMedicalClinic\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\DOR\Desktop\MaxStarMedicalClinic\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\bin\Debug\BackEndLayer.dll
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\bin\Debug\BackEndLayer.pdb
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

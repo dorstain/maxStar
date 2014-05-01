@@ -33,7 +33,15 @@ namespace BackEndLayer
             this.age = age;
             this.gender = gender;
         }
-
+        public Patient()
+        {
+            this.id = null;
+            this.firstName = null;
+            this.lastName = null;
+            this.mainDoctor = null;
+            this.age = 0;
+            this.gender = 'm';
+        }
         public String toString()
         {
             return " id: " + id + "\n name: " + firstName + " " + lastName + "\n gender: " + gender + "\n age: " + age;

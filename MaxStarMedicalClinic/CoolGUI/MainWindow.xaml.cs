@@ -23,7 +23,7 @@ namespace CoolGUI
     public partial class MainWindow : Window
     {
         private Linq_DAL linq;
-        private Manager m;
+        public Manager m;
         public MainWindow()
         {
             linq = new Linq_DAL();
@@ -35,10 +35,10 @@ namespace CoolGUI
         {
             if (m.validate(input_id.Text, input_pass.Text))
             {
-                
-                DoctorScreen ds = new DoctorScreen();
+                DoctorScreen ds = new DoctorScreen(m);
                 ds.Show();
-                this.Close();
+                ds.textBox1.Text = "sasa";
+                this.Hide();
             }
             else
             {

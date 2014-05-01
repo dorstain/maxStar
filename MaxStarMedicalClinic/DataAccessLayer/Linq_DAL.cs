@@ -76,7 +76,7 @@ namespace DataAccessLayer
             users.Add(new User("206295131", "ccccccbgbfh", 0));
             users.Add(new User("123456789", "ccccccbgbfh", 1));
             users.Add(new User("151515151", "ccccccbgbfh", 2));
-
+            users.Add(new User("a", "a", 0));
         }
 
         //----------- DOCTOR METHODS -------------

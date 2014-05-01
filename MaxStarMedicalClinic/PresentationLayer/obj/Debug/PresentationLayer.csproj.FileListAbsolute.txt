@@ -88,3 +88,5 @@ C:\Users\DOR\Desktop\MaxStarMedicalClinic\PresentationLayer\bin\Debug\DataAccess
 C:\Users\DOR\Desktop\MaxStarMedicalClinic\PresentationLayer\obj\Debug\PresentationLayer.csprojResolveAssemblyReference.cache
 C:\Users\DOR\Desktop\MaxStarMedicalClinic\PresentationLayer\obj\Debug\PresentationLayer.dll
 C:\Users\DOR\Desktop\MaxStarMedicalClinic\PresentationLayer\obj\Debug\PresentationLayer.pdb
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\PresentationLayer\bin\Debug\CoolGUI.exe
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\PresentationLayer\bin\Debug\CoolGUI.pdb
