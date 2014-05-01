@@ -22,9 +22,8 @@ namespace CoolGUI
     /// </summary>
     public partial class MainWindow : Window
     {
-        protected Linq_DAL linq;
-        protected Manager m;
-
+        private Linq_DAL linq;
+        public Manager m;
         public MainWindow()
         {
             linq = new Linq_DAL();
@@ -34,23 +33,16 @@ namespace CoolGUI
 
         private void LoginClick(object sender, RoutedEventArgs e)
         {
-            int l = m.validate(input_id.Text, input_pass.Text);
-            switch (l)
+            if (m.validate(input_id.Text, input_pass.Text))
             {
-                case 0:
-                    this.Close();
-                    break;
-                case 1:
-                    Doctor.DoctorMain dm = new Doctor.DoctorMain();
-                    dm.Show();
-                    this.Close();
-                    break;
-                case 2:
-                    this.Close();
-                    break;
-                default:
-                    MessageBoxResult err = MessageBox.Show("Wrong username or password");
-                    break;
+                DoctorScreen ds = new DoctorScreen(m);
+                ds.Show();
+                ds.textBox1.Text = "sasa";
+                this.Hide();
+            }
+            else
+            {
+                MessageBoxResult err = MessageBox.Show("Wrong username or password");
             }
         }
     }

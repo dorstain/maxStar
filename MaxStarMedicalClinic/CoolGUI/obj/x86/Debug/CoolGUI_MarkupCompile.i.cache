@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\CoolGUI\obj\x86\Debug\
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\CoolGUI\obj\x86\Debug\
 CoolGUI
 none
 false
 DEBUG;TRACE
-C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\CoolGUI\App.xaml
-3-284239898
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\CoolGUI\App.xaml
+5-1017023670
 
-8-96689265
-15252370586
-Doctor\Add.xaml;Doctor\DoctorMain.xaml;MainWindow.xaml;
+101554415569
+15-96859465
+Admin\AdminScreen.xaml;Doctor\DoctorScreen.xaml;Login\LoginScreen.xaml;MainWindow.xaml;Patient\PatientScreen.xaml;
 
-True
+False
 

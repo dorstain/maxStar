@@ -10,6 +10,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using DataAccessLayer;
 
 namespace CoolGUI.Doctor
 {
@@ -29,6 +30,11 @@ namespace CoolGUI.Doctor
             Add a = new Add();
             a.Show();
             this.Close();
+        }
+
+        private void Image_ImageFailed(object sender, ExceptionRoutedEventArgs e)
+        {
+
         }
 
         

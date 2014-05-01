@@ -56,9 +56,9 @@
       <Project>{3370dd4d-9c6b-4cd3-8acc-829456a6227c}</Project>
       <Name>BackEndLayer</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CoolGUI\CoolGUILayer.csproj">
+    <ProjectReference Include="..\CoolGUI\CoolGUI.csproj">
       <Project>{72748735-066E-4FDE-939E-78921EEE1BBE}</Project>
-      <Name>CoolGUILayer</Name>
+      <Name>CoolGUI</Name>
     </ProjectReference>
     <ProjectReference Include="..\LogicLayer\LogicLayer.csproj">
       <Project>{c4eda294-0ea7-4c75-8f45-be1050c724b6}</Project>

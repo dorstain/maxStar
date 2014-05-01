@@ -73,10 +73,10 @@ namespace DataAccessLayer
             //users
             users = new List<User>();
 
-            users.Add(new User("206295131", "ccccccbgbfa", 0));
-            users.Add(new User("206295132", "ccccccbgbfb", 1));
-            users.Add(new User("151515151", "ccccccbgbfc", 2));
-
+            users.Add(new User("206295131", "ccccccbgbfh", 0));
+            users.Add(new User("123456789", "ccccccbgbfh", 1));
+            users.Add(new User("151515151", "ccccccbgbfh", 2));
+            users.Add(new User("a", "a", 0));
         }
 
         //----------- DOCTOR METHODS -------------
@@ -353,14 +353,13 @@ namespace DataAccessLayer
 
         //----------- USERS METHODS -------------
 
-        public int validate(String user, String pass)
+        public bool validate(String user, String pass)
         {
             var result= from u in users
                         where u.id.Equals(user) && u.password.Equals(pass)
                         select u;
-            if ((result.ToArray()).Length > 0)
-                return result.First().rank;
-            return -1; //found matching user
+
+            return ((result.ToArray()).Length > 0); //found matching user
         }
 
 

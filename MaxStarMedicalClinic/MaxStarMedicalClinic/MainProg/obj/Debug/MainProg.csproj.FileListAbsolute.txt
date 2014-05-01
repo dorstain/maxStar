@@ -52,3 +52,6 @@ C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\MainProg\bin
 C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\MainProg\bin\Debug\PresentationLayer.pdb
 C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\MainProg\bin\Debug\BackEndLayer.pdb
 C:\Users\vemo\Desktop\MaxStarMedicalClinicV1.3\MaxStarMedicalClinic\MainProg\obj\Debug\MainProg.csprojResolveAssemblyReference.cache
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\MaxStarMedicalClinic\MainProg\bin\Debug\MainProg.exe.config
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\MaxStarMedicalClinic\MainProg\obj\Debug\MainProg.exe
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\MaxStarMedicalClinic\MainProg\obj\Debug\MainProg.pdb

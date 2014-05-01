@@ -47,7 +47,7 @@ namespace LogicLayer
         {
             return db.GetAllDoctorsPatients(id);
         }
-        
+
         public bool DoctorAlreadyExists(String id)
         {
             return db.DoctorAlreadyExists(id);
@@ -154,7 +154,7 @@ namespace LogicLayer
 
         // --------------- User Methods -----------------
 
-        public int validate(String user, String pass)
+        public bool validate(String user, String pass)
         {
             return db.validate(user, pass);
         }
