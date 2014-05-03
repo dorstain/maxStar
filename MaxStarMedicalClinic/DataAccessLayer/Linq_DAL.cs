@@ -76,7 +76,9 @@ namespace DataAccessLayer
             users.Add(new User("206295131", "ccccccbgbfh", 0));
             users.Add(new User("123456789", "ccccccbgbfh", 1));
             users.Add(new User("151515151", "ccccccbgbfh", 2));
-            users.Add(new User("a", "a", 0));
+            users.Add(new User("1", "p", 0));
+            users.Add(new User("2", "p", 1));
+            users.Add(new User("3", "p", 2));
         }
 
         //----------- DOCTOR METHODS -------------
@@ -360,6 +362,15 @@ namespace DataAccessLayer
                         select u;
 
             return ((result.ToArray()).Length > 0); //found matching user
+        }
+        //return user rank
+        public List<User> getUserRank(String user)
+        {
+            var result= from u in users
+                        where u.id.Equals(user) 
+                        select u;
+
+            return result.ToList<User>(); //found matching user
         }
 
 

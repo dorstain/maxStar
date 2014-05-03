@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\CoolGUI\App.xaml
-5-1017023670
+6-401448744
 
-101554415569
+11-1641042391
 15-96859465
-Admin\AdminScreen.xaml;Doctor\DoctorScreen.xaml;Login\LoginScreen.xaml;MainWindow.xaml;Patient\PatientScreen.xaml;
+Admin\AdminScreen.xaml;Doctor\DoctorScreen.xaml;Doctor\Prescription.xaml;Login\LoginScreen.xaml;MainWindow.xaml;Patient\PatientScreen.xaml;
 
 False
 

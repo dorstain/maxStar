@@ -14,7 +14,7 @@ namespace BackEndLayer
             get{ return id; }
             set{ id = value; }
         }
-        private String firstName;
+        public String firstName;
         private String lastName;
         private String mainDoctor; //id of the doctor
         public String MainDoctor

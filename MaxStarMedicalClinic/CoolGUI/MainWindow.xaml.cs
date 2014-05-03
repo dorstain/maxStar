@@ -45,5 +45,10 @@ namespace CoolGUI
                 MessageBoxResult err = MessageBox.Show("Wrong username or password");
             }
         }
+
+        private void image1_ImageFailed(object sender, ExceptionRoutedEventArgs e)
+        {
+
+        }
     }
 }

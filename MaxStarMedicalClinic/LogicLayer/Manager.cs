@@ -159,6 +159,10 @@ namespace LogicLayer
             return db.validate(user, pass);
         }
 
+        public List<User> getUserRank(String user)
+        {
+            return db.getUserRank(user);
+        }
         // --------------- General Methods -----------------
 
         public bool isLegalName(String s)

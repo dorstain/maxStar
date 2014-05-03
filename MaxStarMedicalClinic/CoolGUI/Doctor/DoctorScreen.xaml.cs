@@ -31,9 +31,10 @@ namespace CoolGUI
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            rectangle2.Visibility = System.Windows.Visibility.Hidden;
+            this.dataBlock.Visibility = System.Windows.Visibility.Visible;
             List<Patient> p = new List<Patient>();
-            MessageBoxResult err = MessageBox.Show("id of user" +  this.textBox1.Text);
+            
+           
             p = m.SearchPatientByID(this.textBox1.Text);
 
             //this.
@@ -52,6 +53,46 @@ namespace CoolGUI
 
         private void button4_Click(object sender, RoutedEventArgs e)
         {
+
+        }
+
+        private void image1_ImageFailed(object sender, ExceptionRoutedEventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            //init prescription screen
+            Doctor.Prescription w1 = new Doctor.Prescription();
+
+            //this code is for the tabel population 
+            //put here date and prescription in plain text.
+
+          /*var query =
+            from customer in customers
+            orderby customer.CompanyName
+            select new
+            {
+                customer.LastName,
+                customer.FirstName,
+                customer.CompanyName,
+                customer.Title,
+                customer.EmailAddress,
+                customer.Phone,
+                customer.SalesPerson
+            };
+
+
+            w1.dataTable.ItemsSource = query.ToList();
+            */
+            //populate data grid function here
+
+
+            //show prescription screen
+
+            w1.Show();
+
 
         }
     }

@@ -31,12 +31,35 @@ namespace CoolGUI
 
         private void LoginClick(object sender, RoutedEventArgs e)
         {
+               
             if (m.validate(input_id.Text, input_pass.Text))
             {
-                DoctorScreen ds = new DoctorScreen(m);
-                ds.Show();
-                ds.textBox1.Text = "sasa";
-                this.Hide();
+
+                switch ((m.getUserRank(input_id.Text)).ElementAt(0).rank)
+                {
+                    case 0: //admin
+                        AdminScreen asc = new AdminScreen(m);
+                        asc.Show();
+                        this.Hide();
+                    break;
+
+                    case 1: //doctor
+                         DoctorScreen ds = new DoctorScreen(m);
+                            //chaneg me!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                          ds.userName.Content = "menahem abramovich";
+
+                          ds.Show();
+                          this.Hide();
+                    break;
+
+                    case 2: //patient
+                    PatientScreen ps = new PatientScreen(m);
+                        ps.Show();
+                        this.Hide();
+                    break;
+                }
+
+
             }
             else
             {
