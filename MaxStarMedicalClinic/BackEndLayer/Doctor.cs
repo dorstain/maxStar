@@ -8,7 +8,7 @@ namespace BackEndLayer
 {
     public class Doctor
     {
-        private String id;
+        public String id;
         public string ID
         {
             get
@@ -20,10 +20,10 @@ namespace BackEndLayer
                 id = value;
             }
         }
-        private String firstName;
-        private String lastName;
-        private int salary;
-        private char gender;
+        public String firstName;
+        public String lastName;
+        public int salary;
+        public char gender;
 
         public Doctor(String id, String firstName, String lastName, int salary, char gender)
         {
@@ -37,6 +37,11 @@ namespace BackEndLayer
         public String toString()
         {
             return " id: " + id + "\n name: " + firstName +" "+ lastName + "\n salary: " + salary + "\n gender: " + gender;
+        }
+
+        public String getName()
+        {
+            return firstName + " " + lastName;
         }
 
         public void mergeInfo(Doctor d)

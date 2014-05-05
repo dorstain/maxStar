@@ -25,8 +25,10 @@ namespace DataAccessLayer
             doctors.Add(new Doctor("111111113", "Haim", "Cohen", 17500, 'm'));
             doctors.Add(new Doctor("111111114", "Miri", "Cohen", 29700, 'f'));
             doctors.Add(new Doctor("111111115", "Rachel", "Cohen", 129000, 'f'));
-            doctors.Add(new Doctor("111111116", "Muhamad", "Cohen", 9650, 'm'));
+            doctors.Add(new Doctor("111111116", "Tomer", "Cohen", 9650, 'm'));
             doctors.Add(new Doctor("111111117", "Shiri", "Cohen", 47000, 'f'));
+            //login
+            doctors.Add(new Doctor("2", "David", "Cohen", 47000, 'm'));
 
             //init patients database
             patients = new List<Patient>();
@@ -41,6 +43,8 @@ namespace DataAccessLayer
             patients.Add(new Patient("823456789", "Mor", "Becker", "111111114", 10, 'f'));
             patients.Add(new Patient("923456789", "Shoval", "Gag", "111111114", 17, 'm'));
             patients.Add(new Patient("103456789", "Yuval", "Baron", "111111114", 4, 'f'));
+            //logins
+            patients.Add(new Patient("3", "Idan", "Haviv", "111111114", 33, 'm'));
 
 
             //visits

@@ -106,3 +106,17 @@ C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\MainProg\bin\Debug\P
 C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\MainProg\bin\Debug\BackEndLayer.pdb
 C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\MainProg\obj\Debug\MainProg.exe
 C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\MainProg\obj\Debug\MainProg.pdb
+C:\Users\asus\Desktop\5.3\MaxStarMedicalClinic\MainProg\bin\Debug\MainProg.exe.config
+C:\Users\asus\Desktop\5.3\MaxStarMedicalClinic\MainProg\bin\Debug\MainProg.exe
+C:\Users\asus\Desktop\5.3\MaxStarMedicalClinic\MainProg\bin\Debug\MainProg.pdb
+C:\Users\asus\Desktop\5.3\MaxStarMedicalClinic\MainProg\bin\Debug\DataAccessLayer.dll
+C:\Users\asus\Desktop\5.3\MaxStarMedicalClinic\MainProg\bin\Debug\LogicLayer.dll
+C:\Users\asus\Desktop\5.3\MaxStarMedicalClinic\MainProg\bin\Debug\PresentationLayer.dll
+C:\Users\asus\Desktop\5.3\MaxStarMedicalClinic\MainProg\bin\Debug\BackEndLayer.dll
+C:\Users\asus\Desktop\5.3\MaxStarMedicalClinic\MainProg\bin\Debug\DataAccessLayer.pdb
+C:\Users\asus\Desktop\5.3\MaxStarMedicalClinic\MainProg\bin\Debug\LogicLayer.pdb
+C:\Users\asus\Desktop\5.3\MaxStarMedicalClinic\MainProg\bin\Debug\PresentationLayer.pdb
+C:\Users\asus\Desktop\5.3\MaxStarMedicalClinic\MainProg\bin\Debug\BackEndLayer.pdb
+C:\Users\asus\Desktop\5.3\MaxStarMedicalClinic\MainProg\obj\Debug\MainProg.csprojResolveAssemblyReference.cache
+C:\Users\asus\Desktop\5.3\MaxStarMedicalClinic\MainProg\obj\Debug\MainProg.exe
+C:\Users\asus\Desktop\5.3\MaxStarMedicalClinic\MainProg\obj\Debug\MainProg.pdb

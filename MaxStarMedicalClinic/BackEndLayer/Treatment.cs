@@ -8,27 +8,27 @@ namespace BackEndLayer
 {
     public class Treatment :Mergeable
     {
-        private String patientID;
+        private String patientID { get; set;}
         public string ID
         {
             get { return patientID; }
             set { patientID = value; }
         }
-        private String dateOfStart;
+        private String dateOfStart { get; set; }
         public string StartDate
         {
             get{ return dateOfStart; }
             set{ dateOfStart = value; }
         }
-        private String dateOfFinish;
-        private String createdByDoctor;
+        private String dateOfFinish { get; set; }
+        private String createdByDoctor { get; set; }
         public string Doctor
         {
             get { return createdByDoctor; }
             set { createdByDoctor = value; }
         }
-        private String prognosis;
-        private String prescriptions;
+        private String prognosis { get; set; }
+        private String prescriptions { get; set; }
 
         public Treatment(String patientID, String dateOfStart, String dateOfFinish, String createdByDoctor, String prognosis, String prescriptions){
             this.patientID = patientID;

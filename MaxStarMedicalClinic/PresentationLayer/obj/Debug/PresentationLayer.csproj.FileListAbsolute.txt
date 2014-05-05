@@ -90,3 +90,17 @@ C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\PresentationLayer\bi
 C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\PresentationLayer\bin\Debug\DataAccessLayer.pdb
 C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\PresentationLayer\obj\Debug\PresentationLayer.dll
 C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\PresentationLayer\obj\Debug\PresentationLayer.pdb
+C:\Users\asus\Desktop\5.3\MaxStarMedicalClinic\PresentationLayer\bin\Debug\PresentationLayer.dll.config
+C:\Users\asus\Desktop\5.3\MaxStarMedicalClinic\PresentationLayer\bin\Debug\PresentationLayer.dll
+C:\Users\asus\Desktop\5.3\MaxStarMedicalClinic\PresentationLayer\bin\Debug\PresentationLayer.pdb
+C:\Users\asus\Desktop\5.3\MaxStarMedicalClinic\PresentationLayer\bin\Debug\BackEndLayer.dll
+C:\Users\asus\Desktop\5.3\MaxStarMedicalClinic\PresentationLayer\bin\Debug\CoolGUI.exe
+C:\Users\asus\Desktop\5.3\MaxStarMedicalClinic\PresentationLayer\bin\Debug\LogicLayer.dll
+C:\Users\asus\Desktop\5.3\MaxStarMedicalClinic\PresentationLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\asus\Desktop\5.3\MaxStarMedicalClinic\PresentationLayer\bin\Debug\BackEndLayer.pdb
+C:\Users\asus\Desktop\5.3\MaxStarMedicalClinic\PresentationLayer\bin\Debug\LogicLayer.pdb
+C:\Users\asus\Desktop\5.3\MaxStarMedicalClinic\PresentationLayer\bin\Debug\CoolGUI.pdb
+C:\Users\asus\Desktop\5.3\MaxStarMedicalClinic\PresentationLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\asus\Desktop\5.3\MaxStarMedicalClinic\PresentationLayer\obj\Debug\PresentationLayer.csprojResolveAssemblyReference.cache
+C:\Users\asus\Desktop\5.3\MaxStarMedicalClinic\PresentationLayer\obj\Debug\PresentationLayer.dll
+C:\Users\asus\Desktop\5.3\MaxStarMedicalClinic\PresentationLayer\obj\Debug\PresentationLayer.pdb

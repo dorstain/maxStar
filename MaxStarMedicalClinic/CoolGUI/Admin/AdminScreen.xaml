@@ -1,78 +1,91 @@
 ﻿<Window x:Class="CoolGUI.AdminScreen"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="AdminScreen" Height="481" Width="939">
+        Title="AdminScreen" Height="473" Width="925" Closing="Window_Closing" ResizeMode="NoResize">
     <Grid>
-        <Border BorderThickness="1" CornerRadius="4,4,4,4" BorderBrush="#FFCECECE" Background="White" Margin="203,21,28,12">
-            <Label Content="Label" Height="66" Name="label7" Width="518" Foreground="White" />
-        </Border>
-
-
-        <Border BorderThickness="1" CornerRadius="4,4,4,4" BorderBrush="#FFCECECE" Background="White" Margin="12,21,734,12">
-            <Label Content="Print Prescriptions" Height="43" Name="label3" Width="143" IsEnabled="True" Visibility="Hidden" Foreground="White" />
-        </Border>
-        <Label Content="___________________________________________________________________"   Height="40" HorizontalAlignment="Left" Margin="8,116,0,0" Name="label1" VerticalAlignment="Top" Width="189" BorderBrush="White" Foreground="#FFCFCFCF" />
-        <Label BorderBrush="White" Content="___________________________________________________________________" Foreground="#FFCFCFCF" Height="40" HorizontalAlignment="Left" Margin="8,59,0,0" Name="label2" VerticalAlignment="Top" Width="189" />
-        <Label Content="Edit Doctor" Height="40" HorizontalAlignment="Left" Margin="26,34,0,0" Name="label4" VerticalAlignment="Top" Width="131" Foreground="#FF625E5E" Cursor="Hand" MouseLeftButtonUp="label4_MouseLeftButtonUp" />
-        <Label Content="Edit Patient" Height="44" HorizontalAlignment="Left" Margin="26,90,0,0" Name="label5" VerticalAlignment="Top" Width="131" Cursor="Hand" Foreground="#FF625E5E" MouseLeftButtonUp="label5_MouseLeftButtonUp" />
-        <Label BorderBrush="White" Content="___________________________________________________________________" Foreground="#FFCFCFCF" Height="40" HorizontalAlignment="Left" Margin="9,176,0,0" Name="label6" VerticalAlignment="Top" Width="189" />
-        <Label Name="label_Menu" Content="Edit Doctor" Height="93" HorizontalAlignment="Left" Margin="214,32,0,0"  VerticalAlignment="Top" Width="384" FontSize="36" Foreground="#FF625E5E" />
+        <!-- Content window -->
+        <Border BorderThickness="1" CornerRadius="4,4,4,4" BorderBrush="#FFCECECE" Background="White" Margin="203,21,0,0" HorizontalAlignment="Left" Width="686" Height="401" VerticalAlignment="Top" />
+        <Label Name="label_menu" Content="Hello Admin" Height="93" HorizontalAlignment="Left" Margin="214,32,0,0"  VerticalAlignment="Top" Width="384" FontSize="36" Foreground="#FF625E5E" />
         <Border BorderBrush="Silver" BorderThickness="2" Height="1" HorizontalAlignment="Left" Margin="214,90,0,0" Name="border1" VerticalAlignment="Top" Width="572" />
-        <Label Content="List All Patients"  Cursor="Hand" Height="35" HorizontalAlignment="Left" Margin="26,152,0,0" Name="label8" VerticalAlignment="Top" Width="131" MouseLeftButtonUp="label8_MouseLeftButtonUp" />
-        <Label BorderBrush="White" Content="___________________________________________________________________" Foreground="#FFCFCFCF" Height="40" HorizontalAlignment="Left" Margin="8,229,0,0" Name="label61" VerticalAlignment="Top" Width="189" />
-        <Label Content="Fire A Doctor"  Cursor="Hand" Height="28" HorizontalAlignment="Left" Margin="26,211,0,0" Name="label9" VerticalAlignment="Top" Width="122" MouseLeftButtonUp="label9_MouseLeftButtonUp" />
-   
-    
-        <Grid Name="editDoctor">
-            <Label Content="Name" Height="28" HorizontalAlignment="Left" Margin="234,205,0,0" Name="label10" VerticalAlignment="Top" />
-            <TextBox Height="23" HorizontalAlignment="Left" Margin="234,237,0,0" Name="textBox1" VerticalAlignment="Top" Width="120" />
-            <Label Content="Last Name" Height="28" HorizontalAlignment="Left" Margin="399,205,0,0" Name="label11" VerticalAlignment="Top" />
-            <TextBox Height="23" HorizontalAlignment="Left" Margin="399,237,0,0" Name="textBox2" VerticalAlignment="Top" Width="120" />
-            <Label Content="Salary" Height="28" HorizontalAlignment="Left" Margin="581,205,0,0" Name="label12" VerticalAlignment="Top" />
-            <TextBox Height="23" HorizontalAlignment="Left" Margin="581,237,0,0" Name="textBox3" VerticalAlignment="Top" Width="120" />
-            <ComboBox Height="23" HorizontalAlignment="Left" Margin="731,237,0,0" Name="comboBox1" VerticalAlignment="Top" Width="55" >
-                <ComboBoxItem Tag="m">Male</ComboBoxItem>
-                <ComboBoxItem Tag="f">Female</ComboBoxItem>
-            </ComboBox>
-            <Label Content="Gender" Height="28" HorizontalAlignment="Left" Margin="731,205,0,0" Name="label13" VerticalAlignment="Top" />
-            <Button Content="Save" Height="23" HorizontalAlignment="Left" Margin="236,308,0,0" Name="button1" VerticalAlignment="Top" Width="75" Background="#FF2FDAD7" BorderBrush="#FF2FDAD7"/>
-            <Label Content="Enter id" Height="28" HorizontalAlignment="Left" Margin="223,116,0,0" Name="label14" VerticalAlignment="Top" />
-            <TextBox Height="23" HorizontalAlignment="Right" Margin="0,138,569,0" Name="textBox4" VerticalAlignment="Top" Width="120" />
-            <Button Content="load" Height="23" HorizontalAlignment="Left" Margin="364,138,0,0" Name="button2" VerticalAlignment="Top" Width="42" Background="#FF2FDAD7" BorderBrush="#FF2FDAD7" />
-            <Border BorderBrush="Silver" BorderThickness="1" Height="179" HorizontalAlignment="Left" Margin="223,199,0,0" Name="border2" VerticalAlignment="Top" Width="619" />
-        </Grid>
+
+        <!-- Side bar -->
+        <Border BorderThickness="1" CornerRadius="4,4,4,4" BorderBrush="#FFCECECE" Background="White" Margin="12,21,0,0" HorizontalAlignment="Left" Width="165" Height="401" VerticalAlignment="Top" />
+        <Label Content="Add Doctor" Height="55" HorizontalAlignment="Left" Margin="12,21,0,0" Name="label_addDoctor" VerticalAlignment="Top" Width="165" Cursor="Hand" MouseLeftButtonUp="addDoctor_MouseLeftButtonUp" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Label BorderBrush="White" Content="__________________________________________________________________" Foreground="#FFCFCFCF" Height="40" HorizontalAlignment="Left" Margin="8,59,0,0" Name="label2" VerticalAlignment="Top" Width="189" />
+        <Label Content="Edit Doctor" Height="53" HorizontalAlignment="Left" Margin="12,80,0,0" Name="label_EditDoctor" VerticalAlignment="Top" Width="165" Cursor="Hand" MouseLeftButtonUp="editDoctor_MouseLeftButtonUp" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Label BorderBrush="White" Content="__________________________________________________________________"   Height="40" HorizontalAlignment="Left" Margin="8,115,0,0" Name="label1" VerticalAlignment="Top" Width="189" Foreground="#FFCFCFCF" />
+        <Label Content="Fire Doctor" Cursor="Hand" Height="57" HorizontalAlignment="Left" Margin="12,135,0,0" Name="label_fireDoctor" VerticalAlignment="Top" Width="165" MouseLeftButtonUp="fireDoctor_MouseLeftButtonUp" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Label BorderBrush="White" Content="__________________________________________________________________" Foreground="#FFCFCFCF" Height="40" HorizontalAlignment="Left" Margin="8,172,0,0" Name="label6" VerticalAlignment="Top" Width="189" />
+        <Label Content="Add Patient"  Cursor="Hand" Height="55" HorizontalAlignment="Left" Margin="12,193,0,0" Name="label_addPatient" VerticalAlignment="Top" Width="165" MouseLeftButtonUp="addPatient_MouseLeftButtonUp" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+        <Label BorderBrush="White" Content="__________________________________________________________________" Foreground="#FFCFCFCF" Height="40" HorizontalAlignment="Left" Margin="8,230,0,0" Name="label61" VerticalAlignment="Top" Width="189" />
+        <Label Content="Edit Patient" Cursor="Hand" Height="57" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="12,251,0,0" Name="label_editPatient" VerticalAlignment="Top" MouseLeftButtonUp="editPatient_MouseLeftButtonUp" VerticalContentAlignment="Center" Width="165" />
+        <Label BorderBrush="White" Content="__________________________________________________________________" Foreground="#FFCFCFCF" Height="40" HorizontalAlignment="Left" Margin="8,288,0,0" Name="label11" VerticalAlignment="Top" Width="189" />
+        <Label Content="Remove Patient" Cursor="Hand" Height="55" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="12,309,0,0" Name="label_removePatient" VerticalAlignment="Top" MouseLeftButtonUp="removePatient_MouseLeftButtonUp" VerticalContentAlignment="Center" Width="165" />
+        <Label BorderBrush="White" Content="__________________________________________________________________" Foreground="#FFCFCFCF" Height="40" HorizontalAlignment="Left" Margin="8,346,0,0" Name="label13" VerticalAlignment="Top" Width="189" />
+        <Label Content="List of all Patients" Cursor="Hand" Height="55" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="12,367,0,0" Name="label_allPatients" VerticalAlignment="Top" MouseLeftButtonUp="allPatients_MouseLeftButtonUp" VerticalContentAlignment="Center" Width="165" />
+
         
         
-        <Grid Name="editPatient" Visibility="Hidden">
+        <Grid Name="AddDoctor" Visibility="Hidden">
+        </Grid>
 
-            <Label Content="Name" Height="28" HorizontalAlignment="Left" Margin="234,227,0,0" Name="label10_b" VerticalAlignment="Top" />
-            <TextBox Height="23" HorizontalAlignment="Left" Margin="234,259,0,0" Name="textBox15_b" VerticalAlignment="Top" Width="120" />
-            <Label Content="Last Name" Height="28" HorizontalAlignment="Left" Margin="399,227,0,0" Name="label11_b" VerticalAlignment="Top" />
-            <TextBox Height="23" HorizontalAlignment="Left" Margin="399,259,0,0" Name="textBox2_b" VerticalAlignment="Top" Width="120" />
-            <Label Content="Main Doctor" Height="28" HorizontalAlignment="Left" Margin="573,227,0,0" Name="label12_b" VerticalAlignment="Top" />
-            <ComboBox Height="23" HorizontalAlignment="Left" Margin="573,259,0,0" Name="comboBox2_b" VerticalAlignment="Top" Width="118" />
-            <ComboBox Height="23" HorizontalAlignment="Left" Margin="731,259,0,0" Name="comboBox1_b" VerticalAlignment="Top" Width="55" >
+        <Grid Name="EditDoctor" Visibility="Hidden">
+            <Label Content="Enter ID:" Height="28" HorizontalAlignment="Left" Margin="223,120,0,0" Name="label_doctorid" VerticalAlignment="Top" />
+            <TextBox Height="23" Margin="286,122,0,0" Name="data_doctorid" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120" />
+            <Button Content="load" Height="23" HorizontalAlignment="Left" Margin="417,122,0,0" Name="button_loadDoctor" VerticalAlignment="Top" Width="42" Background="#FF2FDAD7" BorderBrush="#FF2FDAD7" Click="button_loadDoctor_Click" />
+            <Border BorderBrush="Silver" BorderThickness="1" Height="179" HorizontalAlignment="Left" Margin="226,188,0,0" Name="border2" VerticalAlignment="Top" Width="640" />
+            <Label Content="First Name" Height="28" HorizontalAlignment="Left" Margin="258,210,0,0" Name="label_dfname" VerticalAlignment="Top" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="258,242,0,0" Name="data_dfname" VerticalAlignment="Top" Width="120" />
+            <Label Content="Last Name" Height="28" HorizontalAlignment="Left" Margin="426,210,0,0" Name="label_dlname" VerticalAlignment="Top" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="426,242,0,0" Name="data_dlname" VerticalAlignment="Top" Width="120" />
+            <Label Content="Salary" Height="28" HorizontalAlignment="Left" Margin="591,210,0,0" Name="label_dsalary" VerticalAlignment="Top" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="591,242,0,0" Name="data_dsalary" VerticalAlignment="Top" Width="120" />
+            <Label Content="Gender" Height="28" HorizontalAlignment="Left" Margin="755,210,0,0" Name="label_dgender" VerticalAlignment="Top" />
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="755,242,0,0" Name="data_dgender" VerticalAlignment="Top" Width="75" >
                 <ComboBoxItem Tag="m">Male</ComboBoxItem>
                 <ComboBoxItem Tag="f">Female</ComboBoxItem>
-            </ComboBox>
-            <Label Content="Gender" Height="28" HorizontalAlignment="Left" Margin="731,227,0,0" Name="label13_b" VerticalAlignment="Top" />
-            <Button Content="Save" Height="23" HorizontalAlignment="Left" Margin="236,330,0,0" Name="button1_b" VerticalAlignment="Top" Width="75" Background="#FF2FDAD7" BorderBrush="#FF2FDAD7"/>
-            <Border BorderBrush="Silver" BorderThickness="1" Height="197" HorizontalAlignment="Left" Margin="218,201,0,0" Name="border2_b" VerticalAlignment="Top" Width="646" />
-            <Label Content="Doctor Id:" Height="28" HorizontalAlignment="Left" Margin="222,118,0,0" Name="label15_b" VerticalAlignment="Top" />
-            <TextBox Height="23" HorizontalAlignment="Left" Margin="287,122,0,0" Name="textBox1_b" VerticalAlignment="Top" Width="120" />
-            <Button Content="load" Height="23" HorizontalAlignment="Left" Margin="413,123,0,0" Name="button2_b" VerticalAlignment="Top" Width="42" Background="#FF2FDAD7" BorderBrush="#FF2FDAD7" />
-
+            </ComboBox>  
+            <Button Content="Save" Height="23" HorizontalAlignment="Left" Margin="260,317,0,0" Name="button_saveDoctor" VerticalAlignment="Top" Width="75" Background="#FF2FDAD7" BorderBrush="#FF2FDAD7" Click="button_saveDoctor_Click" />
         </Grid>
-
-        <Grid Name="ListPatients" Visibility="Hidden">
-            
-            
-        </Grid>
-
+        
         <Grid Name="FireDoctor" Visibility="Hidden">
-
+            <Label Content="Enter ID:" Height="28" HorizontalAlignment="Left" Margin="223,120,0,0" Name="label_firedoctorid" VerticalAlignment="Top" />
+            <TextBox Height="23" Margin="286,122,0,0" Name="data_firedoctorid" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120" />
+            <Button Content="fire!" Height="23" HorizontalAlignment="Left" Margin="417,122,0,0" Name="button_fireDoctor" VerticalAlignment="Top" Width="42" Background="#FF2FDAD7" BorderBrush="#FF2FDAD7" Click="button_fireDoctor_Click" />
+        </Grid>
+        
+        <Grid Name="AddPatient" Visibility="Hidden">
+        </Grid>
+        
+        <Grid Name="EditPatient" Visibility="Hidden">
+            <Border BorderBrush="Silver" BorderThickness="1" Height="179" HorizontalAlignment="Left" Margin="226,188,0,0" Name="border2_b" VerticalAlignment="Top" Width="640"/>
+            <Label Content="Enter ID:" Height="28" HorizontalAlignment="Left" Margin="223,120,0,0" Name="label_patientid" VerticalAlignment="Top" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="286,122,0,0" Name="data_patientid" VerticalAlignment="Top" Width="120" />
+            <Button Content="load" Height="23" HorizontalAlignment="Left" Margin="417,122,0,0" Name="button_loadPatient" VerticalAlignment="Top" Width="42" Background="#FF2FDAD7" BorderBrush="#FF2FDAD7" Click="button_loadPatient_Click" />
+            <Label Content="First Name" Height="28" HorizontalAlignment="Left" Margin="258,210,0,0" Name="label_pfname" VerticalAlignment="Top" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="258,242,0,0" Name="data_pfname" VerticalAlignment="Top" Width="120" />
+            <Label Content="Last Name" Height="28" HorizontalAlignment="Left" Margin="401,210,0,0" Name="label_plname" VerticalAlignment="Top" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="401,242,0,0" Name="data_plname" VerticalAlignment="Top" Width="120" />
+            <Label Content="Main Doctor" Height="28" HorizontalAlignment="Left" Margin="614,210,0,0" Name="label_pmaindoc" VerticalAlignment="Top" />
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="614,242,0,0" Name="data_pmaindoc" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Gender" Height="28" HorizontalAlignment="Left" Margin="756,210,0,0" Name="label_pgender" VerticalAlignment="Top" />
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="755,242,0,0" Name="data_pgender" VerticalAlignment="Top" Width="75" >
+                <ComboBoxItem Tag="m">Male</ComboBoxItem>
+                <ComboBoxItem Tag="f">Female</ComboBoxItem>
+            </ComboBox>
+            <Label Content="Age" Height="28" Name="label_page" Width="47" HorizontalAlignment="Left" Margin="542,210,0,0" VerticalAlignment="Top" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="542,242,0,0" Name="data_page" VerticalAlignment="Top" Width="50" />
+            <Button Content="Save" Height="23" HorizontalAlignment="Left" Margin="260,317,0,0" Name="button_savePatient" VerticalAlignment="Top" Width="75" Background="#FF2FDAD7" BorderBrush="#FF2FDAD7" Click="button_savePatient_Click" />
         </Grid>
 
-
+        <Grid Name="RemovePatient" Visibility="Hidden">
+            <Label Content="Enter ID:" Height="28" HorizontalAlignment="Left" Margin="223,120,0,0" Name="label_removepatientid" VerticalAlignment="Top" />
+            <TextBox Height="23" Margin="286,122,0,0" Name="data_removepatientid" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120" />
+            <Button Content="remove" Height="23" HorizontalAlignment="Left" Margin="417,122,0,0" Name="button_removePatient" VerticalAlignment="Top" Width="49" Background="#FF2FDAD7" BorderBrush="#FF2FDAD7" Click="button_removePatient_Click" />
+        </Grid>
+        
+        <Grid Name="AllPatients" Visibility="Hidden">
+        </Grid>
+        
     </Grid>
 </Window>

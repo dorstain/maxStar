@@ -10,6 +10,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using BackEndLayer;
 using DataAccessLayer;
 using LogicLayer;
 
@@ -25,8 +26,13 @@ namespace CoolGUI
         public LoginScreen()
         {
             linq = new Linq_DAL();
-            m = new Manager(linq);
+            m = new Manager(linq); 
             InitializeComponent();  
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
 
         private void LoginClick(object sender, RoutedEventArgs e)
@@ -34,7 +40,6 @@ namespace CoolGUI
                
             if (m.validate(input_id.Text, input_pass.Text))
             {
-
                 switch ((m.getUserRank(input_id.Text)).ElementAt(0).rank)
                 {
                     case 0: //admin
@@ -44,12 +49,12 @@ namespace CoolGUI
                     break;
 
                     case 1: //doctor
-                         DoctorScreen ds = new DoctorScreen(m);
-                            //chaneg me!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                          ds.userName.Content = "menahem abramovich";
-
-                          ds.Show();
-                          this.Hide();
+                         DoctorScreen ds = new DoctorScreen(m, input_id.Text);
+                         BackEndLayer.Doctor [] tDoc = (m.SearchDoctorByID(input_id.Text)).ToArray();
+                         if (tDoc.Length > 0)
+                            ds.data_doctor.Content = "Dr. "+tDoc[0].getName();
+                         ds.Show();
+                         this.Hide();
                     break;
 
                     case 2: //patient
@@ -58,13 +63,17 @@ namespace CoolGUI
                         this.Hide();
                     break;
                 }
-
-
             }
             else
             {
                 MessageBoxResult err = MessageBox.Show("Wrong username or password");
             }
         }
+
+        private void image1_ImageFailed(object sender, ExceptionRoutedEventArgs e)
+        {
+
+        }
+
     }
 }

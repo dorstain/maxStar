@@ -184,6 +184,21 @@ namespace LogicLayer
             return ans;
         }
 
+        public bool isLegalInt(String s, int limit)
+        {
+            try
+            {
+                int tmp = int.Parse(s);
+                if (tmp < limit)
+                    return false;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+            return true;
+        }
+
         public bool isLegalDate(String s)
         {
             bool ans = true;

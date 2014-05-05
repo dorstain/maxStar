@@ -8,22 +8,22 @@ namespace BackEndLayer
 {
     public class Patient : Mergeable
     {
-        private String id;
+        public String id;
         public String ID
         {
             get{ return id; }
             set{ id = value; }
         }
         public String firstName;
-        private String lastName;
-        private String mainDoctor; //id of the doctor
+        public String lastName;
+        public String mainDoctor; //id of the doctor
         public String MainDoctor
         {
             get { return mainDoctor; }
             set { mainDoctor = value; }
         }
-        private char gender;
-        private int age;
+        public char gender;
+        public int age;
 
         public Patient(String id, String firstName, String lastName, String mainDoctor, int age, char gender){
             this.id = id;
@@ -45,6 +45,21 @@ namespace BackEndLayer
         public String toString()
         {
             return " id: " + id + "\n name: " + firstName + " " + lastName + "\n gender: " + gender + "\n age: " + age;
+        }
+
+        public String getName()
+        {
+            return firstName + " " + lastName;
+        }
+
+        public String getAge()
+        {
+            return this.age+"";
+        }
+
+        public String getGender()
+        {
+            return ((gender == 'm') ? "Male" : "Female");
         }
 
         public void mergeInfo(Mergeable m)
