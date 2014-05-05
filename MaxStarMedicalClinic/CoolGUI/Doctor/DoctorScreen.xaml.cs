@@ -73,7 +73,7 @@ namespace CoolGUI
             Doctor.Treatments w1 = new Doctor.Treatments(m);
 
             var query = from t in m.GetAllTreatments()
-                        where t.ID.Equals(this.data_patient.Text)
+                        where t.patientID.Equals(this.data_patient.Text)
                         select t;
             
             ObservableCollection<Treatment> oct = new ObservableCollection<Treatment>();

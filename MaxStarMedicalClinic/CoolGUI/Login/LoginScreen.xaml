@@ -9,11 +9,11 @@
             <ColumnDefinition Width="204*" />
             <ColumnDefinition Width="147*" />
         </Grid.ColumnDefinitions>
-        <Label Content="User ID" Height="26" HorizontalAlignment="Right" Margin="0,130,0,0" Name="ttl_id" VerticalAlignment="Top" Width="92" HorizontalContentAlignment="Right" />
-        <TextBox Grid.Column="2" Height="26" HorizontalAlignment="Left" Margin="0,130,0,0" Name="input_id" VerticalAlignment="Top" Width="204" />
-        <Label Content="YubiKey" Height="26" HorizontalAlignment="Right" HorizontalContentAlignment="Right" Margin="0,162,0,0" Name="ttl_pass" VerticalAlignment="Top" Width="92" />
-        <TextBox Grid.Column="2" Height="26" HorizontalAlignment="Left" Margin="0,162,0,0" Name="input_pass" VerticalAlignment="Top" Width="204" />
-        <Button Content="L o g i n" Height="26" HorizontalAlignment="Left" Margin="0,223,0,0" Name="button1" VerticalAlignment="Top" Width="204" Background="#FF2FDAD7" BorderBrush="#FF2FDAD7" Grid.Column="2" Click="LoginClick" />
-        <Image Height="147" HorizontalAlignment="Left" Name="image1" Stretch="Uniform" VerticalAlignment="Top" ImageFailed="image1_ImageFailed" Source="/CoolGUI;component/Images/clear-clinic-logo41.jpg" Width="204" Grid.Column="2" Margin="0,-23,0,0"/>
+        <Image Height="160" HorizontalAlignment="Left" Name="image1" Stretch="Uniform" VerticalAlignment="Top" ImageFailed="image1_ImageFailed" Source="/CoolGUI;component/Images/logo1.png" Width="373" Grid.ColumnSpan="4" Margin="98,7,0,0" />
+        <Label Content="User ID" Height="26" HorizontalAlignment="Right" Margin="0,160,0,0" Name="ttl_id" VerticalAlignment="Top" Width="92" HorizontalContentAlignment="Right" />
+        <TextBox Grid.Column="2" Height="26" HorizontalAlignment="Left" Margin="0,160,0,0" Name="input_id" VerticalAlignment="Top" Width="204" />
+        <Label Content="YubiKey" Height="26" HorizontalAlignment="Right" HorizontalContentAlignment="Right" Margin="0,192,0,0" Name="ttl_pass" VerticalAlignment="Top" Width="92" />
+        <TextBox Grid.Column="2" Height="26" HorizontalAlignment="Left" Margin="0,192,0,0" Name="input_pass" VerticalAlignment="Top" Width="204" />
+        <Button Content="L o g i n" Height="26" HorizontalAlignment="Left" Margin="0,241,0,0" Name="button1" VerticalAlignment="Top" Width="204" Background="#FF2FDAD7" BorderBrush="#FF2FDAD7" Grid.Column="2" Click="LoginClick" Foreground="White" FontWeight="Normal" FontSize="14" />    
     </Grid>
 </Window>

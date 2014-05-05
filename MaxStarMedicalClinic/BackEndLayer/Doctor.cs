@@ -8,22 +8,12 @@ namespace BackEndLayer
 {
     public class Doctor
     {
-        public String id;
-        public string ID
-        {
-            get
-            {
-                return id;
-            }
-            set
-            {
-                id = value;
-            }
-        }
-        public String firstName;
-        public String lastName;
-        public int salary;
-        public char gender;
+        public String id { get; set; }
+        public String firstName { get; set; }
+        public String lastName { get; set; }
+        public String name { get; set; }
+        public int salary { get; set; }
+        public char gender { get; set; }
 
         public Doctor(String id, String firstName, String lastName, int salary, char gender)
         {
@@ -32,6 +22,7 @@ namespace BackEndLayer
             this.lastName = lastName;
             this.salary = salary;
             this.gender = gender;
+            this.name = firstName + " " + lastName;
         }
 
         public String toString()
@@ -41,7 +32,7 @@ namespace BackEndLayer
 
         public String getName()
         {
-            return firstName + " " + lastName;
+            return name;
         }
 
         public void mergeInfo(Doctor d)

@@ -113,7 +113,7 @@ namespace PresentationLayer
                 case "12":
                     //###### edit doctor #######
                     Doctor newDoc = EditDoctor();
-                    m.EditDoctor(newDoc.ID, newDoc);
+                    m.EditDoctor(newDoc.id, newDoc);
                     break;
                 case "13":
                     //###### delete doctor #######
@@ -167,7 +167,7 @@ namespace PresentationLayer
                 case "22":
                     //###### edit patient #######
                     Patient newP = EditPatient();
-                    m.EditPatient(newP.ID, newP);
+                    m.EditPatient(newP.id, newP);
                     break;
                 case "23":
                     //###### remove patient #######
@@ -210,7 +210,7 @@ namespace PresentationLayer
                 case "32":
                     //###### edit visit #######
                     Visit newVis = EditVisit();
-                    m.EditVisit(newVis.ID, newVis);
+                    m.EditVisit(newVis.id, newVis);
                     break;
                 case "33":
                     //###### remove visit #######
@@ -263,7 +263,7 @@ namespace PresentationLayer
                 case "42":
                     //###### edit treatment #######
                     Treatment newT = EditTreatment();
-                    m.EditTreatmentByIdAndStartDate(newT.ID, newT);
+                    m.EditTreatmentByIdAndStartDate(newT.patientID, newT);
                     break;
                 case "43":
                     //###### remove treatment #######

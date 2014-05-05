@@ -96,7 +96,7 @@ namespace DataAccessLayer
         public List<Doctor> SearchDoctorByID(String id)
         {
             var result = from d in doctors
-                         where d.ID == id
+                         where d.id == id
                          select d;
 
             return result.ToList<Doctor>();
@@ -107,7 +107,7 @@ namespace DataAccessLayer
             bool isRemoved=false;
 
             var result = from d in doctors
-                         where d.ID == id
+                         where d.id == id
                          select d;
 
             Doctor[] a = result.ToArray();
@@ -136,7 +136,7 @@ namespace DataAccessLayer
         public List<Patient> GetAllDoctorsPatients(String id)
         {
             var result = from p in patients
-                         where p.MainDoctor.Equals(id)
+                         where p.mainDoctor.Equals(id)
                          select p;
 
             return result.ToList();
@@ -145,13 +145,33 @@ namespace DataAccessLayer
         public bool DoctorAlreadyExists(String id)
         {
             var result = from d in doctors
-                         where d.ID.Equals(id)
+                         where d.id.Equals(id)
                          select d;
             Doctor[] resultArray = result.ToArray<Doctor>();
 
             if (resultArray.Length == 0)
                 return false;
             return true;
+        }
+
+        public String GetDoctorIDByName(String name)
+        {
+            var result = from d in doctors
+                         where d.name.Equals(name)
+                         select d;
+            Doctor[] resultArray = result.ToArray<Doctor>();
+
+            return resultArray[0].id;
+        }
+
+        public String GetDoctorNameByID(String id)
+        {
+            var result = from d in doctors
+                         where d.id.Equals(id)
+                         select d;
+            Doctor[] resultArray = result.ToArray<Doctor>();
+
+            return resultArray[0].name;
         }
 
         //----------- PATIENT METHODS -------------
@@ -167,7 +187,7 @@ namespace DataAccessLayer
             bool isRemoved = false;
 
             var result = from p in patients
-                         where p.ID == id
+                         where p.id == id
                          select p;
 
             Patient[] a = result.ToArray();
@@ -183,7 +203,7 @@ namespace DataAccessLayer
         public List<Patient> SearchPatientByID(String id)
         {
             var result = from p in patients
-                         where p.ID == id
+                         where p.id == id
                          select p;
 
             return result.ToList<Patient>();
@@ -201,12 +221,12 @@ namespace DataAccessLayer
         public void ChangeDoctor(String id)
         {
             var result = from p in patients
-                         where p.MainDoctor.Equals(id)
+                         where p.mainDoctor.Equals(id)
                          select p;
 
             foreach (Patient p in result)
             {
-                p.mergeInfo(new Patient("-1", "-1", "-1", doctors.First<Doctor>().ID, -1, '1'));
+                p.mergeInfo(new Patient("-1", "-1", "-1", doctors.First<Doctor>().id, -1, '1'));
             }
 
         }
@@ -214,7 +234,7 @@ namespace DataAccessLayer
         public bool PatientAlreadyExists(String id)
         {
             var result = from p in patients
-                         where p.ID.Equals(id)
+                         where p.id.Equals(id)
                          select p;
             
             Patient[] resultArray = result.ToArray<Patient>();
@@ -236,7 +256,7 @@ namespace DataAccessLayer
         public bool VisitAlreadyExists(String id)
         {
             var result = from v in visits
-                         where v.ID.Equals(id)
+                         where v.id.Equals(id)
                          select v;
 
             Visit[] resultArray = result.ToArray<Visit>();
@@ -249,7 +269,7 @@ namespace DataAccessLayer
         public List<Visit> SearchVisitByID(String visitID)
         {
             var result = from v in visits
-                         where v.ID == visitID
+                         where v.id.Equals(visitID)
                          select v;
 
             return result.ToList<Visit>();
@@ -260,7 +280,7 @@ namespace DataAccessLayer
             bool isRemoved = false;
 
             var result = from v in visits
-                         where v.ID == visitID
+                         where v.id.Equals(visitID)
                          select v;
 
             Visit[] a = result.ToArray();
@@ -285,7 +305,7 @@ namespace DataAccessLayer
         public List<Visit> GetVisitsByDate(String s)
         {
             var result = from v in visits
-                         where v.Date.Equals(s)
+                         where v.dateOfVisit.Equals(s)
                          select v;
 
             return result.ToList<Visit>();
@@ -299,10 +319,10 @@ namespace DataAccessLayer
             treatments.Add(t);
         }
 
-        public void EditTreatmentByIdAndStartDate(String id, Treatment treatment)
+        public void EditTreatmentByIdAndStartDate(String patientID, Treatment treatment)
         {
-            var result = from t in SearchTreatmentByID(id)
-                         where t.StartDate.Equals(treatment.StartDate)
+            var result = from t in SearchTreatmentByID(patientID)
+                         where t.dateOfStart.Equals(treatment.dateOfStart)
                          select t;
 
             List<Treatment> tre = result.ToList<Treatment>();
@@ -313,12 +333,12 @@ namespace DataAccessLayer
             }
         }
 
-        public bool RemoveTreatmentByIdAndStartDate(String id, String start)
+        public bool RemoveTreatmentByIdAndStartDate(String patientID, String start)
         {
             bool removed = false;
 
             var result = from t in treatments
-                         where t.ID.Equals(id) && t.StartDate.Equals(start)
+                         where t.patientID.Equals(patientID) && t.dateOfStart.Equals(start)
                          select t;
 
             Treatment[] a = result.ToArray<Treatment>();
@@ -331,19 +351,19 @@ namespace DataAccessLayer
             return removed;
         }
 
-        public List<Treatment> SearchTreatmentByID(String id)
+        public List<Treatment> SearchTreatmentByID(String patientID)
         {
             var result = from t in treatments
-                         where t.ID.Equals(id)
+                         where t.patientID.Equals(patientID)
                          select t;
 
             return result.ToList<Treatment>();
         }
 
-        public List<Treatment> GetAllTreatmentsByDoctorID(String id)
+        public List<Treatment> GetAllTreatmentsByDoctorID(String patientID)
         {
             var result = from t in treatments
-                         where t.Doctor.Equals(id)
+                         where t.createdByDoctor.Equals(patientID)
                          select t;
 
             return result.ToList<Treatment>();

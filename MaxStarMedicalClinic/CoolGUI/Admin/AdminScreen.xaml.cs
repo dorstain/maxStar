@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Windows;
@@ -22,13 +23,19 @@ namespace CoolGUI
     public partial class AdminScreen : Window
     {
 
-        public Manager m;
-
+        private Manager m;
 
         public AdminScreen(Manager m)
         {
             this.m = m;
+
             InitializeComponent();
+
+            this.data_apmaindoc.DataContext = m.GetAllDoctors();
+            this.data_pmaindoc.DataContext = m.GetAllDoctors();
+
+            this.dataGrid_patients.DataContext = m.GetAllPatients();
+            
         }
 
         //add doctor
@@ -85,6 +92,39 @@ namespace CoolGUI
             this.label_menu.Content = "List of all Patients";
             HideAll();
             this.AllPatients.Visibility = System.Windows.Visibility.Visible;
+        }
+
+        private void button_addDoctor_Click(object sender, RoutedEventArgs e)
+        {
+            String id = data_adoctorid.Text;
+            String first = data_adfname.Text;
+            String last = data_adlname.Text;
+            String salary = data_adsalary.Text;
+            char gender = (data_adgender.Text.Equals("Male") ? 'm' : 'f');
+            if (!m.isLegalName(first) || !m.isLegalName(last) || !m.isLegalInt(salary, 2499) || m.DoctorAlreadyExists(id))
+            {
+                String error = "The following things need to be fixed:\n\n";
+                if(m.DoctorAlreadyExists(id))
+                    error += " Doctor is already in the system.\n";
+                if (!m.isLegalName(first))
+                    error += " First name is not legal. Names must start with Captial letter.\n";
+                if (!m.isLegalName(last))
+                    error += " Last name is not legal. Names must start with Captial letter.\n";
+                if (!m.isLegalInt(salary, 2499))
+                    error += " Salary is not legal. Minimum value is 2500.\n";
+                MessageBoxResult err = MessageBox.Show(error);
+            }
+            else
+            {
+                BackEndLayer.Doctor d = new BackEndLayer.Doctor(id, first, last, int.Parse(salary), gender);
+                m.AddDoctor(d);
+                data_adoctorid.Text = "";
+                data_adfname.Text = "";
+                data_adlname.Text = "";
+                data_adsalary.Text = "";
+                data_adgender.Text = "";
+                MessageBoxResult done = MessageBox.Show("The doctor is added successfully to the system database.");
+            }
         }
 
         private void button_loadDoctor_Click(object sender, RoutedEventArgs e)
@@ -145,7 +185,7 @@ namespace CoolGUI
                 data_patientid.IsReadOnly = true;
                 data_pfname.Text = pat.firstName;
                 data_plname.Text = pat.lastName;
-                data_pmaindoc.Text = pat.mainDoctor;
+                data_pmaindoc.Text = m.GetDoctorNameByID(pat.mainDoctor);
                 data_page.Text = pat.age + "";
                 data_pgender.Text = ((pat.gender == 'm') ? "Male" : "Female"); 
             }
@@ -160,7 +200,7 @@ namespace CoolGUI
             String first = data_pfname.Text;
             String last = data_plname.Text;
             String age = data_page.Text;
-            String maindoc = data_pmaindoc.Text;
+            String maindoc = m.GetDoctorIDByName(data_pmaindoc.Text);
             char gender = (data_dgender.Text.Equals("Male") ? 'm' : 'f');
             if (!m.isLegalName(first) || !m.isLegalName(last) || !m.DoctorAlreadyExists(maindoc) || !m.isLegalInt(age,1))
             {
@@ -235,6 +275,48 @@ namespace CoolGUI
             else
             {
                 MessageBoxResult err = MessageBox.Show("The patient does not exists.");
+            }
+        }
+
+        private void logo_ImageFailed(object sender, ExceptionRoutedEventArgs e)
+        {
+
+        }
+
+        private void button_addPatient_Click(object sender, RoutedEventArgs e)
+        {
+            String id = data_apatientid.Text;
+            String first = data_apfname.Text;
+            String last = data_aplname.Text;
+            String age = data_apage.Text;
+            String maindoc = m.GetDoctorIDByName(data_apmaindoc.Text);
+            char gender = (data_apgender.Text.Equals("Male") ? 'm' : 'f');
+            if (!m.isLegalName(first) || !m.isLegalName(last) || !m.isLegalInt(age, 1) || !m.DoctorAlreadyExists(maindoc) ||  m.PatientAlreadyExists(id))
+            {
+                String error = "The following things need to be fixed:\n\n";
+                if (m.PatientAlreadyExists(id))
+                    error += " Patient is already in the system.\n";
+                if (!m.isLegalName(first))
+                    error += " First name is not legal. Names must start with Captial letter.\n";
+                if (!m.isLegalName(last))
+                    error += " Last name is not legal. Names must start with Captial letter.\n";
+                if(!m.DoctorAlreadyExists(maindoc))
+                    error += " Doctor does not in the system.\n";
+                if (!m.isLegalInt(age, 1))
+                    error += " Age is not legal. Must be integer bigger than 0.\n";
+                MessageBoxResult err = MessageBox.Show(error);
+            }
+            else
+            {
+                BackEndLayer.Patient p = new BackEndLayer.Patient(id, first, last, maindoc, int.Parse(age), gender);
+                m.AddPatient(p);
+                data_apatientid.Text = "";
+                data_apfname.Text = "";
+                data_aplname.Text = "";
+                data_apmaindoc.Text = "";
+                data_apage.Text = "";
+                data_apgender.Text = "";
+                MessageBoxResult done = MessageBox.Show("The patient is added successfully to the system database.");
             }
         }
     }

@@ -6,8 +6,8 @@
         <!-- Content window -->
         <Border BorderThickness="1" CornerRadius="4,4,4,4" BorderBrush="#FFCECECE" Background="White" Margin="203,21,0,0" HorizontalAlignment="Left" Width="686" Height="401" VerticalAlignment="Top" />
         <Label Name="label_menu" Content="Hello Admin" Height="93" HorizontalAlignment="Left" Margin="214,32,0,0"  VerticalAlignment="Top" Width="384" FontSize="36" Foreground="#FF625E5E" />
-        <Border BorderBrush="Silver" BorderThickness="2" Height="1" HorizontalAlignment="Left" Margin="214,90,0,0" Name="border1" VerticalAlignment="Top" Width="572" />
-
+        <Border BorderBrush="Silver" BorderThickness="2" Height="1" HorizontalAlignment="Left" Margin="214,90,0,0" Name="border1" VerticalAlignment="Top" Width="350" />
+        <Image Height="190" HorizontalAlignment="Left" Margin="625,44,0,0" Name="logo" Stretch="Uniform" VerticalAlignment="Top" Width="260" ImageFailed="logo_ImageFailed" Source="/CoolGUI;component/Images/logo1.png" />
         <!-- Side bar -->
         <Border BorderThickness="1" CornerRadius="4,4,4,4" BorderBrush="#FFCECECE" Background="White" Margin="12,21,0,0" HorizontalAlignment="Left" Width="165" Height="401" VerticalAlignment="Top" />
         <Label Content="Add Doctor" Height="55" HorizontalAlignment="Left" Margin="12,21,0,0" Name="label_addDoctor" VerticalAlignment="Top" Width="165" Cursor="Hand" MouseLeftButtonUp="addDoctor_MouseLeftButtonUp" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
@@ -24,9 +24,23 @@
         <Label BorderBrush="White" Content="__________________________________________________________________" Foreground="#FFCFCFCF" Height="40" HorizontalAlignment="Left" Margin="8,346,0,0" Name="label13" VerticalAlignment="Top" Width="189" />
         <Label Content="List of all Patients" Cursor="Hand" Height="55" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="12,367,0,0" Name="label_allPatients" VerticalAlignment="Top" MouseLeftButtonUp="allPatients_MouseLeftButtonUp" VerticalContentAlignment="Center" Width="165" />
 
-        
-        
+        <!-- -->
         <Grid Name="AddDoctor" Visibility="Hidden">
+            <Border BorderBrush="Silver" BorderThickness="1" Height="215" HorizontalAlignment="Left" Margin="226,177,0,0" Name="border23" VerticalAlignment="Top" Width="640" />
+            <Label Content="Doctor ID" Height="28" HorizontalAlignment="Left" Margin="258,192,0,0" Name="label_adoctorid" VerticalAlignment="Top" />
+            <TextBox Height="23" Margin="258,224,0,0" Name="data_adoctorid" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120" />
+            <Label Content="First Name" Height="28" HorizontalAlignment="Left" Margin="258,263,0,0" Name="label_adfname" VerticalAlignment="Top" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="258,295,0,0" Name="data_adfname" VerticalAlignment="Top" Width="120" />
+            <Label Content="Last Name" Height="28" HorizontalAlignment="Left" Margin="426,263,0,0" Name="label_adlname" VerticalAlignment="Top" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="426,295,0,0" Name="data_adlname" VerticalAlignment="Top" Width="120" />
+            <Label Content="Salary" Height="28" HorizontalAlignment="Left" Margin="591,263,0,0" Name="label_adsalary" VerticalAlignment="Top" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="591,295,0,0" Name="data_adsalary" VerticalAlignment="Top" Width="120" />
+            <Label Content="Gender" Height="28" HorizontalAlignment="Left" Margin="755,263,0,0" Name="label_adgender" VerticalAlignment="Top" />
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="755,295,0,0" Name="data_adgender" VerticalAlignment="Top" Width="75" >
+                <ComboBoxItem Tag="m">Male</ComboBoxItem>
+                <ComboBoxItem Tag="f">Female</ComboBoxItem>
+            </ComboBox>  
+            <Button Content="Save" Height="23" HorizontalAlignment="Left" Margin="260,345,0,0" Name="button_addDoctor" VerticalAlignment="Top" Width="75" Background="#FF2FDAD7" BorderBrush="#FF2FDAD7" Click="button_addDoctor_Click" />
         </Grid>
 
         <Grid Name="EditDoctor" Visibility="Hidden">
@@ -55,8 +69,25 @@
         </Grid>
         
         <Grid Name="AddPatient" Visibility="Hidden">
+            <Border BorderBrush="Silver" BorderThickness="1" Height="215" HorizontalAlignment="Left" Margin="226,177,0,0" Name="border203" VerticalAlignment="Top" Width="640" />
+            <Label Content="Patient ID" Height="28" HorizontalAlignment="Left" Margin="258,192,0,0" Name="label_apatientid" VerticalAlignment="Top" />
+            <TextBox Height="23" Margin="258,224,0,0" Name="data_apatientid" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120" />
+            <Label Content="First Name" Height="28" HorizontalAlignment="Left" Margin="258,263,0,0" Name="label_apfname" VerticalAlignment="Top" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="258,295,0,0" Name="data_apfname" VerticalAlignment="Top" Width="120" />
+            <Label Content="Last Name" Height="28" HorizontalAlignment="Left" Margin="401,263,0,0" Name="label_aplname" VerticalAlignment="Top" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="401,295,0,0" Name="data_aplname" VerticalAlignment="Top" Width="120" />
+            <Label Content="Age" Height="28" Name="label_apage" Width="47" HorizontalAlignment="Left" Margin="542,263,0,0" VerticalAlignment="Top" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="542,295,0,0" Name="data_apage" VerticalAlignment="Top" Width="50" />
+            <Label Content="Main Doctor" Height="28" HorizontalAlignment="Left" Margin="614,263,0,0" Name="label_apmaindoc" VerticalAlignment="Top" />
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="614,295,0,0" Name="data_apmaindoc" VerticalAlignment="Top" Width="120" ItemsSource="{Binding}" DisplayMemberPath="name"/>
+            <Label Content="Gender" Height="28" HorizontalAlignment="Left" Margin="756,263,0,0" Name="label_apgender" VerticalAlignment="Top" />
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="755,295,0,0" Name="data_apgender" VerticalAlignment="Top" Width="75" >
+                <ComboBoxItem Tag="m">Male</ComboBoxItem>
+                <ComboBoxItem Tag="f">Female</ComboBoxItem>
+            </ComboBox>
+            <Button Content="Save" Height="23" HorizontalAlignment="Left" Margin="260,345,0,0" Name="button_addPatient" VerticalAlignment="Top" Width="75" Background="#FF2FDAD7" BorderBrush="#FF2FDAD7" Click="button_addPatient_Click" />
         </Grid>
-        
+
         <Grid Name="EditPatient" Visibility="Hidden">
             <Border BorderBrush="Silver" BorderThickness="1" Height="179" HorizontalAlignment="Left" Margin="226,188,0,0" Name="border2_b" VerticalAlignment="Top" Width="640"/>
             <Label Content="Enter ID:" Height="28" HorizontalAlignment="Left" Margin="223,120,0,0" Name="label_patientid" VerticalAlignment="Top" />
@@ -66,15 +97,15 @@
             <TextBox Height="23" HorizontalAlignment="Left" Margin="258,242,0,0" Name="data_pfname" VerticalAlignment="Top" Width="120" />
             <Label Content="Last Name" Height="28" HorizontalAlignment="Left" Margin="401,210,0,0" Name="label_plname" VerticalAlignment="Top" />
             <TextBox Height="23" HorizontalAlignment="Left" Margin="401,242,0,0" Name="data_plname" VerticalAlignment="Top" Width="120" />
+            <Label Content="Age" Height="28" Name="label_page" Width="47" HorizontalAlignment="Left" Margin="542,210,0,0" VerticalAlignment="Top" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="542,242,0,0" Name="data_page" VerticalAlignment="Top" Width="50" />
             <Label Content="Main Doctor" Height="28" HorizontalAlignment="Left" Margin="614,210,0,0" Name="label_pmaindoc" VerticalAlignment="Top" />
-            <ComboBox Height="23" HorizontalAlignment="Left" Margin="614,242,0,0" Name="data_pmaindoc" VerticalAlignment="Top" Width="120"/>
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="614,242,0,0" Name="data_pmaindoc" VerticalAlignment="Top" Width="120" ItemsSource="{Binding}" DisplayMemberPath="name"/>
             <Label Content="Gender" Height="28" HorizontalAlignment="Left" Margin="756,210,0,0" Name="label_pgender" VerticalAlignment="Top" />
             <ComboBox Height="23" HorizontalAlignment="Left" Margin="755,242,0,0" Name="data_pgender" VerticalAlignment="Top" Width="75" >
                 <ComboBoxItem Tag="m">Male</ComboBoxItem>
                 <ComboBoxItem Tag="f">Female</ComboBoxItem>
             </ComboBox>
-            <Label Content="Age" Height="28" Name="label_page" Width="47" HorizontalAlignment="Left" Margin="542,210,0,0" VerticalAlignment="Top" />
-            <TextBox Height="23" HorizontalAlignment="Left" Margin="542,242,0,0" Name="data_page" VerticalAlignment="Top" Width="50" />
             <Button Content="Save" Height="23" HorizontalAlignment="Left" Margin="260,317,0,0" Name="button_savePatient" VerticalAlignment="Top" Width="75" Background="#FF2FDAD7" BorderBrush="#FF2FDAD7" Click="button_savePatient_Click" />
         </Grid>
 
@@ -83,8 +114,11 @@
             <TextBox Height="23" Margin="286,122,0,0" Name="data_removepatientid" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120" />
             <Button Content="remove" Height="23" HorizontalAlignment="Left" Margin="417,122,0,0" Name="button_removePatient" VerticalAlignment="Top" Width="49" Background="#FF2FDAD7" BorderBrush="#FF2FDAD7" Click="button_removePatient_Click" />
         </Grid>
-        
+        <!-- -->
         <Grid Name="AllPatients" Visibility="Hidden">
+            <Border BorderBrush="Silver" BorderThickness="1" Height="213" HorizontalAlignment="Left" Margin="226,188,0,0" Name="border21" VerticalAlignment="Top" Width="640">
+                <DataGrid ItemsSource="{Binding}" Height="200" Name="dataGrid_patients" Width="626" MinColumnWidth="100" AlternatingRowBackground="#A92FDAD7" AlternationCount="2" CanUserResizeColumns="False" CanUserReorderColumns="False" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+            </Border>
         </Grid>
         
     </Grid>

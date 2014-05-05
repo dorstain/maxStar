@@ -8,26 +8,16 @@ namespace BackEndLayer
 {
     public class Visit : Mergeable
     {
-        private String visitID;
-        public String ID
-        {
-            get { return visitID; }
-            set { visitID = value; }
-        }
-        private String dateOfVisit;
-        public String Date
-        {
-            get { return dateOfVisit; }
-            set { dateOfVisit = value; }
-        }
-        private String assignedDoctor;
-        private String patientID;
-        private String doctorNotes;
+        public String id {get; set;}
+        public String dateOfVisit { get; set; }
+        public String assignedDoctor { get; set; }
+        public String patientID { get; set; }
+        public String doctorNotes { get; set; }
         //private String treatmentsMade;    DEPRACATED no need for this
 
-        public Visit(String visitID, String dateOfVisit, String assignedDoctor, String patientID, String doctorNotes)
+        public Visit(String id, String dateOfVisit, String assignedDoctor, String patientID, String doctorNotes)
         {
-            this.visitID = visitID;
+            this.id = id;
             this.dateOfVisit = dateOfVisit;
             this.assignedDoctor = assignedDoctor;
             this.patientID = patientID;
@@ -36,7 +26,7 @@ namespace BackEndLayer
 
         public String toString()
         {
-            return " id: " + visitID + "\n date of visit: " + dateOfVisit + "\n assigned doctor: " + assignedDoctor + "\n patient's id: " + patientID + "\n doctor notes: " + doctorNotes;
+            return " id: " + id + "\n date of visit: " + dateOfVisit + "\n assigned doctor: " + assignedDoctor + "\n patient's id: " + patientID + "\n doctor notes: " + doctorNotes;
         }
 
         public void mergeInfo(Mergeable m)
@@ -44,9 +34,9 @@ namespace BackEndLayer
             if (m is Visit)
             {
                 Visit v = (Visit)m;
-                if (!v.visitID.Equals("-1"))
+                if (!v.id.Equals("-1"))
                 {
-                    visitID = v.visitID;
+                    id = v.id;
                 }
                 if (!v.dateOfVisit.Equals("-1"))
                 {

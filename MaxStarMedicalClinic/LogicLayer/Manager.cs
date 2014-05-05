@@ -53,6 +53,16 @@ namespace LogicLayer
             return db.DoctorAlreadyExists(id);
         }
 
+        public String GetDoctorIDByName(String name)
+        {
+            return db.GetDoctorIDByName(name);
+        }
+
+        public String GetDoctorNameByID(String id)
+        {
+            return db.GetDoctorNameByID(id);
+        }
+
         // --------------- Patient Methods -----------------
 
         public List<Patient> SearchPatientByID(String id)
@@ -167,21 +177,18 @@ namespace LogicLayer
 
         public bool isLegalName(String s)
         {
-            bool ans = true;
             String first = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
             String other = "abcdefghijklmnopqrstuvwxyz-";
-            if (first.IndexOf(s[0]) < 0)
-            {
-                ans = false;
-            }
-            for (int i = 1; i < s.Length && ans; i++)
+            if (s.Equals("") || first.IndexOf(s[0]) < 0)
+                return false;
+            for (int i = 1; i < s.Length; i++)
             {
                 if ((first+other).IndexOf(s[i]) < 0)
                 {
-                    ans = false;
+                    return false;
                 }
             }
-            return ans;
+            return true;
         }
 
         public bool isLegalInt(String s, int limit)
