@@ -39,3 +39,5 @@ C:\Users\vemo\Desktop\MaxStarMedicalClinicV3.0\MaxStarMedicalClinic\Main\obj\x86
 C:\Users\vemo\Desktop\MaxStarMedicalClinicV3.0\MaxStarMedicalClinic\Main\obj\x86\Debug\Main.Properties.Resources.resources
 C:\Users\vemo\Desktop\MaxStarMedicalClinicV3.0\MaxStarMedicalClinic\Main\obj\x86\Debug\Main.csproj.GenerateResource.Cache
 C:\Users\vemo\Desktop\MaxStarMedicalClinicV3.0\MaxStarMedicalClinic\Main\bin\Debug\MySql.Data.dll
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\Main\obj\x86\Debug\Main.exe
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\Main\obj\x86\Debug\Main.pdb

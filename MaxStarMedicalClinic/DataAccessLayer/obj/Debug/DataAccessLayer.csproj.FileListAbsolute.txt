@@ -13,3 +13,6 @@ C:\Users\vemo\Desktop\MaxStarMedicalClinicV3.0\MaxStarMedicalClinic\DataAccessLa
 C:\Users\vemo\Desktop\MaxStarMedicalClinicV3.0\MaxStarMedicalClinic\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\vemo\Desktop\MaxStarMedicalClinicV3.0\MaxStarMedicalClinic\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
 C:\Users\vemo\Desktop\MaxStarMedicalClinicV3.0\MaxStarMedicalClinic\DataAccessLayer\bin\Debug\MySql.Data.dll
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\DOR\Documents\GitHub\maxStar\MaxStarMedicalClinic\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
