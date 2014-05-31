@@ -30,6 +30,7 @@ namespace DataAccessLayer
             doctors.Add(new Doctor("111111115", "Rachel", "Cohen", 129000, 'f'));
             doctors.Add(new Doctor("111111116", "Tomer", "Cohen", 9650, 'm'));
             doctors.Add(new Doctor("111111117", "Shiri", "Cohen", 47000, 'f'));
+         
             //login
             doctors.Add(new Doctor("2", "David", "Cohen", 47000, 'm'));
 
@@ -50,7 +51,7 @@ namespace DataAccessLayer
             //logins
             patients.Add(new Patient("3", "Idan", "Haviv", "111111114", 33, 'm'));
 
-
+            
             //visits
             visits = new List<Visit>();
 
@@ -106,7 +107,6 @@ namespace DataAccessLayer
 
                 MySqlCommand cmd = new MySqlCommand();
                 cmd.Connection = conn;
-                //cmd.CommandText = "INSERT INTO doctors(id, firstName, lastName, salary, gender) VALUES('122', 'sasa', 'sasa', '343453', 'f')";
                 cmd.CommandText = sql;
                 cmd.Prepare();
 
@@ -130,8 +130,14 @@ namespace DataAccessLayer
 
         }
 
-
-        public void runSqlSelect(String sql)
+        /*
+         * 0  - doctors
+         * 1  - patients
+         * 2  - visits
+         * 3  - treatments
+         * 4  - users
+         */
+        public List<Doctor> runSqlSelectDoctors(String sql)
         {
              string cs = @"server=37.142.52.107;user id=root;database=maxStar;persistsecurityinfo=True";
 
@@ -148,12 +154,19 @@ namespace DataAccessLayer
                 MySqlCommand cmd = new MySqlCommand(stm, conn);
                 rdr = cmd.ExecuteReader();
 
+
+                //create stracture
+                doctors = new List<Doctor>();
+
+
                 while (rdr.Read()) 
                 {
-                    st += rdr.GetInt32(0) + ": " + rdr.GetString(1);
-
+                 doctors.Add(new Doctor(rdr.GetString(0), rdr.GetString(1), rdr.GetString(2), rdr.GetInt32(3), rdr.GetChar(4)));
                 }
-                    
+
+                return doctors;
+          
+
             } catch (MySqlException ex) 
             {
                 Console.WriteLine("Error: {0}",  ex.ToString());
@@ -171,8 +184,63 @@ namespace DataAccessLayer
                 }
 
             }
+            return doctors;
         }
+
+        public List<Patient> runSqlSelectPations(String sql)
+        {
+            string cs = @"server=37.142.52.107;user id=root;database=maxStar;persistsecurityinfo=True";
+
+            MySqlConnection conn = null;
+            MySqlDataReader rdr = null;
+
+            String st = "";
+            try
+            {
+                conn = new MySqlConnection(cs);
+                conn.Open();
+
+                string stm = sql;
+                MySqlCommand cmd = new MySqlCommand(stm, conn);
+                rdr = cmd.ExecuteReader();
+
+
+                //create stracture
+                patients = new List<Patient>();
+
+
+                while (rdr.Read())
+                {
+                    patients.Add(new Patient(rdr.GetString(0), rdr.GetString(1), rdr.GetString(2), rdr.GetString(3), rdr.GetInt32(4), rdr.GetChar(5)));
+                }
+
+                return patients;
+
+
+            }
+            catch (MySqlException ex)
+            {
+                Console.WriteLine("Error: {0}", ex.ToString());
+
+            }
+            finally
+            {
+                if (rdr != null)
+                {
+                    rdr.Close();
+                }
+
+                if (conn != null)
+                {
+                    conn.Close();
+                }
+
+            }
+            return patients;
         }
+
+
+
         //----------- DOCTOR METHODS -------------
 
         //add new doctor
@@ -189,27 +257,10 @@ namespace DataAccessLayer
 
         public List<Doctor> SearchDoctorByID(String id)
         {
-            var result = from d in doctors
-                         where d.id == id
-                         select d;
 
-            
-            MySqlConnection conn = null;
-            MySqlDataReader rdr = null;
+            var result = runSqlSelectDoctors("SELECT * FROM doctors WHERE id=" + id);
+           return result.ToList<Doctor>();
 
-            string stm = "SELECT * FROM Authors";
-            MySqlCommand cmd = new MySqlCommand(stm, conn);
-            rdr = cmd.ExecuteReader();
-
-            while (rdr.Read())
-            {
-                Console.WriteLine(rdr.GetInt32(0) + ": "
-                    + rdr.GetString(1));
-            }
-
-
-
-            return result.ToList<Doctor>();
         }
 
         public bool RemoveDoctorByID(String id)
@@ -225,6 +276,8 @@ namespace DataAccessLayer
             for (int i = 0; i < a.Length; i++)
             {
                 isRemoved = doctors.Remove(a[i]);
+                String sql = "DELETE FROM doctors WHERE id="+id+" ";
+                runSql(sql);
             }
 
             if (isRemoved)
@@ -246,9 +299,8 @@ namespace DataAccessLayer
 
         public List<Patient> GetAllDoctorsPatients(String id)
         {
-            var result = from p in patients
-                         where p.mainDoctor.Equals(id)
-                         select p;
+            var result = runSqlSelectPations("SELECT * FROM patients WHERE doctorId=" + id);
+
 
             return result.ToList();
         }
