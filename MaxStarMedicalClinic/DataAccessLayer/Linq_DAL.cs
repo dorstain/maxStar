@@ -30,6 +30,7 @@ namespace DataAccessLayer
             doctors.Add(new Doctor("111111115", "Rachel", "Cohen", 129000, 'f'));
             doctors.Add(new Doctor("111111116", "Tomer", "Cohen", 9650, 'm'));
             doctors.Add(new Doctor("111111117", "Shiri", "Cohen", 47000, 'f'));
+         
             //login
             doctors.Add(new Doctor("2", "David", "Cohen", 47000, 'm'));
 
@@ -131,7 +132,7 @@ namespace DataAccessLayer
         }
 
 
-        public void runSqlSelect(String sql)
+        public void runSqlSelect(String sql, Object dataStracture)
         {
              string cs = @"server=37.142.52.107;user id=root;database=maxStar;persistsecurityinfo=True";
 
@@ -150,6 +151,7 @@ namespace DataAccessLayer
 
                 while (rdr.Read()) 
                 {
+                    
                     st += rdr.GetInt32(0) + ": " + rdr.GetString(1);
 
                 }
@@ -172,7 +174,7 @@ namespace DataAccessLayer
 
             }
         }
-        }
+        
         //----------- DOCTOR METHODS -------------
 
         //add new doctor
@@ -189,24 +191,13 @@ namespace DataAccessLayer
 
         public List<Doctor> SearchDoctorByID(String id)
         {
+
+
+            runSqlSelect("SELECT * FROM doctors", doctors);
+
             var result = from d in doctors
                          where d.id == id
                          select d;
-
-            
-            MySqlConnection conn = null;
-            MySqlDataReader rdr = null;
-
-            string stm = "SELECT * FROM Authors";
-            MySqlCommand cmd = new MySqlCommand(stm, conn);
-            rdr = cmd.ExecuteReader();
-
-            while (rdr.Read())
-            {
-                Console.WriteLine(rdr.GetInt32(0) + ": "
-                    + rdr.GetString(1));
-            }
-
 
 
             return result.ToList<Doctor>();
@@ -225,6 +216,8 @@ namespace DataAccessLayer
             for (int i = 0; i < a.Length; i++)
             {
                 isRemoved = doctors.Remove(a[i]);
+                String sql = "DELETE FROM doctors WHERE id="+id+" ";
+                runSql(sql);
             }
 
             if (isRemoved)

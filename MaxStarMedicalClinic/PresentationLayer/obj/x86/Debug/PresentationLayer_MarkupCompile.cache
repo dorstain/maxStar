@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\vemo\Desktop\MaxStarMedicalClinicV3.0\MaxStarMedicalClinic\PresentationLayer\obj\x86\Debug\
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\PresentationLayer\obj\x86\Debug\
 PresentationLayer
 none
 false
 DEBUG;TRACE
-C:\Users\vemo\Desktop\MaxStarMedicalClinicV3.0\MaxStarMedicalClinic\PresentationLayer\App.xaml
+C:\Users\vemo\Documents\GitHub\maxStar\MaxStarMedicalClinic\PresentationLayer\App.xaml
 6-1910392945
 
 101231399414
-149163218
+14-68586901
 Admin\AdminScreen.xaml;Doctor\DoctorScreen.xaml;Doctor\Treatments.xaml;Login\ChangePass.xaml;Login\LoginScreen.xaml;Patient\PatientScreen.xaml;
 
 False
