@@ -179,7 +179,7 @@ namespace DataAccessLayer
         public void AddDoctor(Doctor d)
         {
             //old & busty
-           // doctors.Add(d);
+           doctors.Add(d);
 
             //cool & awsome!
             String sql = "INSERT INTO doctors(id, firstName, lastName, salary, gender) VALUES('"+ d.id +"', '"+d.firstName+"', '"+d.lastName+"', '"+d.salary+"', '"+d.gender+"')";
