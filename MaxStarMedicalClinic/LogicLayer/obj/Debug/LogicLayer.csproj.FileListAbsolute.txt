@@ -1,0 +1,19 @@
+c:\users\asus\documents\visual studio 2010\Projects\new\MaxStarMedicalClinic\LogicLayer\bin\Debug\LogicLayer.dll
+c:\users\asus\documents\visual studio 2010\Projects\new\MaxStarMedicalClinic\LogicLayer\bin\Debug\LogicLayer.pdb
+c:\users\asus\documents\visual studio 2010\Projects\new\MaxStarMedicalClinic\LogicLayer\bin\Debug\BackEndLayer.dll
+c:\users\asus\documents\visual studio 2010\Projects\new\MaxStarMedicalClinic\LogicLayer\bin\Debug\DataAccessLayer.dll
+c:\users\asus\documents\visual studio 2010\Projects\new\MaxStarMedicalClinic\LogicLayer\bin\Debug\BackEndLayer.pdb
+c:\users\asus\documents\visual studio 2010\Projects\new\MaxStarMedicalClinic\LogicLayer\bin\Debug\DataAccessLayer.pdb
+c:\users\asus\documents\visual studio 2010\Projects\new\MaxStarMedicalClinic\LogicLayer\obj\Debug\LogicLayer.csprojResolveAssemblyReference.cache
+c:\users\asus\documents\visual studio 2010\Projects\new\MaxStarMedicalClinic\LogicLayer\obj\Debug\LogicLayer.dll
+c:\users\asus\documents\visual studio 2010\Projects\new\MaxStarMedicalClinic\LogicLayer\obj\Debug\LogicLayer.pdb
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV3.0\MaxStarMedicalClinic\LogicLayer\bin\Debug\LogicLayer.dll
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV3.0\MaxStarMedicalClinic\LogicLayer\bin\Debug\LogicLayer.pdb
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV3.0\MaxStarMedicalClinic\LogicLayer\bin\Debug\BackEndLayer.dll
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV3.0\MaxStarMedicalClinic\LogicLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV3.0\MaxStarMedicalClinic\LogicLayer\bin\Debug\BackEndLayer.pdb
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV3.0\MaxStarMedicalClinic\LogicLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV3.0\MaxStarMedicalClinic\LogicLayer\obj\Debug\LogicLayer.csprojResolveAssemblyReference.cache
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV3.0\MaxStarMedicalClinic\LogicLayer\obj\Debug\LogicLayer.dll
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV3.0\MaxStarMedicalClinic\LogicLayer\obj\Debug\LogicLayer.pdb
+C:\Users\vemo\Desktop\MaxStarMedicalClinicV3.0\MaxStarMedicalClinic\LogicLayer\bin\Debug\MySql.Data.dll
