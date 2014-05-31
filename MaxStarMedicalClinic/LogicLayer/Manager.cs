@@ -7,20 +7,20 @@ using DataAccessLayer;
 
 namespace LogicLayer
 {
-    public class Manager
+    public class Manager : IManager
     {
-        private Linq_DAL db;
+        private IDAL db;
 
-        public Manager(Linq_DAL db)
+        public Manager(IDAL db)
         {
-            this.db = db; 
+            this.db = db;
         }
 
         // --------------- Doctor Methods -----------------
 
         public List<Doctor> SearchDoctorByID(String id)
         {
-            return db.SearchDoctorByID(id); 
+            return db.SearchDoctorByID(id);
         }
 
         public void EditDoctor(String id, Doctor d)
@@ -40,7 +40,7 @@ namespace LogicLayer
 
         public List<Doctor> GetAllDoctors()
         {
-            return db.doctors;
+            return db.GetAllDoctors();
         }
 
         public List<Patient> GetAllDoctorsPatients(String id)
@@ -53,6 +53,15 @@ namespace LogicLayer
             return db.DoctorAlreadyExists(id);
         }
 
+        public String GetDoctorIDByName(String name)
+        {
+            return db.GetDoctorIDByName(name);
+        }
+
+        public String GetDoctorNameByID(String id)
+        {
+            return db.GetDoctorNameByID(id);
+        }
         // --------------- Patient Methods -----------------
 
         public List<Patient> SearchPatientByID(String id)
@@ -77,12 +86,30 @@ namespace LogicLayer
 
         public List<Patient> GetAllPatients()
         {
-            return db.patients;
+            return db.GetAllPatients();
         }
 
-        public bool PatientAlreadyExists(String id)
+        public bool PatientAlreadyExists(string id)
         {
             return db.PatientAlreadyExists(id);
+        }
+
+        public List<Visit> GetPatientVisits(string id)
+        {
+            return db.GetPatientVisits(id);
+        }
+
+        public List<Treatment> GetPatientTreatments(string id)
+        {
+            return db.GetPatientTreatments(id);
+        }
+
+        public Treatment GetPatientLastTreatment(string id)
+        {
+            List<Treatment> t = GetPatientTreatments(id);
+            if (t == null || t.Count == 0)
+                return null;
+            return t.ElementAt(t.Count - 1);
         }
 
         // --------------- Visit Methods -----------------
@@ -159,44 +186,62 @@ namespace LogicLayer
             return db.validate(user, pass);
         }
 
+        public int getUserRank(String user)
+        {
+            return db.getUserRank(user);
+        }
+
+        public User SearchByUserID(string id)
+        {
+            return db.SearchUserByID(id);
+        }
+
+        public void AddUser(String id, String pass, int rank)
+        {
+            db.AddUser(id,pass,rank);
+        }
+
+        public void ChangePassword(String id, String pass)
+        {
+            db.ChangePassword(id, pass);
+        }
+
+        public bool UserAlreadyExists(String id)
+        {
+             return db.UserAlreadyExists(id);
+        }
+
         // --------------- General Methods -----------------
 
         public bool isLegalName(String s)
         {
-            bool ans = true;
             String first = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
             String other = "abcdefghijklmnopqrstuvwxyz-";
-            if (first.IndexOf(s[0]) < 0)
+            if (s.Equals("") || first.IndexOf(s[0]) < 0)
+                return false;
+            for (int i = 1; i < s.Length; i++)
             {
-                ans = false;
-            }
-            for (int i = 1; i < s.Length && ans; i++)
-            {
-                if ((first+other).IndexOf(s[i]) < 0)
+                if ((first + other).IndexOf(s[i]) < 0)
                 {
-                    ans = false;
+                    return false;
                 }
             }
-            return ans;
+            return true;
         }
 
-        public bool isLegalDate(String s)
+        public bool isLegalInt(String s, int limit)
         {
-            bool ans = true;
-            String[] date = s.Split('/');
-            if (date.Length != 3)
-                ans = false;
-            else
+            try
             {
-                int day = int.Parse(date[0]);
-                int month = int.Parse(date[1]);
-                String year = date[2];
-                if (day < 1 || day > 31 || month < 1 || month > 12 || year.Length != 4)
-                {
-                    ans = false;
-                }
+                int tmp = int.Parse(s);
+                if (tmp < limit)
+                    return false;
             }
-            return ans;
+            catch (Exception)
+            {
+                return false;
+            }
+            return true;
         }
     }
 }

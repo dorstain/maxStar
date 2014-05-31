@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BackEndLayer;
+using MySql.Data.MySqlClient;
 
 namespace DataAccessLayer
 {
-    public class Linq_DAL
+    public class Linq_DAL : IDAL
     {
         public List<Doctor> doctors;
         public List<Patient> patients;
@@ -17,21 +18,25 @@ namespace DataAccessLayer
 
         public Linq_DAL()
         {
+
+
             //init doctors database
             doctors = new List<Doctor>();
 
-            doctors.Add(new Doctor("111111111","Moshe","Cohen",58000,'m'));
+            doctors.Add(new Doctor("111111111", "Moshe", "Cohen", 58000, 'm'));
             doctors.Add(new Doctor("111111112", "Yaniv", "Cohen", 12000, 'm'));
             doctors.Add(new Doctor("111111113", "Haim", "Cohen", 17500, 'm'));
             doctors.Add(new Doctor("111111114", "Miri", "Cohen", 29700, 'f'));
             doctors.Add(new Doctor("111111115", "Rachel", "Cohen", 129000, 'f'));
-            doctors.Add(new Doctor("111111116", "Muhamad", "Cohen", 9650, 'm'));
+            doctors.Add(new Doctor("111111116", "Tomer", "Cohen", 9650, 'm'));
             doctors.Add(new Doctor("111111117", "Shiri", "Cohen", 47000, 'f'));
+            //login
+            doctors.Add(new Doctor("2", "David", "Cohen", 47000, 'm'));
 
             //init patients database
             patients = new List<Patient>();
 
-            patients.Add(new Patient("123456789","Tania","Yanik","111111111",14,'f'));
+            patients.Add(new Patient("123456789", "Tania", "Yanik", "2", 14, 'f'));
             patients.Add(new Patient("223456789", "Dor", "Bar", "111111111", 69, 'm'));
             patients.Add(new Patient("323456789", "Lior", "Mor", "111111112", 21, 'f'));
             patients.Add(new Patient("423456789", "Eden", "Levi", "111111111", 25, 'm'));
@@ -41,14 +46,17 @@ namespace DataAccessLayer
             patients.Add(new Patient("823456789", "Mor", "Becker", "111111114", 10, 'f'));
             patients.Add(new Patient("923456789", "Shoval", "Gag", "111111114", 17, 'm'));
             patients.Add(new Patient("103456789", "Yuval", "Baron", "111111114", 4, 'f'));
+            patients.Add(new Patient("12", "Yuval", "Baron", "111111114", 4, 'f'));
+            //logins
+            patients.Add(new Patient("3", "Idan", "Haviv", "111111114", 33, 'm'));
 
 
             //visits
             visits = new List<Visit>();
 
-            visits.Add(new Visit("101", "18/03/2014", "111111111", "123456789", "Need to rest"));
-            visits.Add(new Visit("102", "19/03/2014", "111111112", "523456789", "need to sleep"));
-            visits.Add(new Visit("103", "18/03/2014", "111111113", "103456789", "need akamol"));
+            visits.Add(new Visit("101", "18/03/2014", "111111111", "3", "Need to rest"));
+            visits.Add(new Visit("102", "19/03/2014", "111111112", "3", "need to sleep"));
+            visits.Add(new Visit("103", "18/03/2014", "111111113", "3", "need akamol"));
             visits.Add(new Visit("104", "04/03/2014", "111111117", "523456789", "need to jump over cliff"));
             visits.Add(new Visit("105", "05/03/2014", "111111116", "423456789", "need to eat meat"));
             visits.Add(new Visit("106", "06/03/2014", "111111113", "623456789", "need to shower every hour"));
@@ -57,8 +65,8 @@ namespace DataAccessLayer
             //treatments
             treatments = new List<Treatment>();
 
-            treatments.Add(new Treatment("123456789", "18/03/2014", "19/03/2014", "111111111", "hyper sdhkjfs", "2 akamol"));
-            treatments.Add(new Treatment("123456789", "15/03/2014", "25/03/2014", "111111112", "hyper glycom", "2 hydra"));
+            treatments.Add(new Treatment("3", "18/03/2014", "19/03/2014", "111111111", "hyper sdhkjfs", "2 akamol"));
+            treatments.Add(new Treatment("3", "15/03/2014", "25/03/2014", "111111112", "hyper glycom", "2 hydra"));
             treatments.Add(new Treatment("123456789", "25/02/2013", "19/03/2014", "111111117", "hyper sdhkjfs", "2 akamol"));
             treatments.Add(new Treatment("223456789", "18/03/2010", "19/03/2012", "111111117", "hyper sdhkjfs", "2 akamol"));
             treatments.Add(new Treatment("323456789", "18/03/2014", "19/03/2014", "111111115", "hyper sdhkjfs", "2 akamol"));
@@ -76,37 +84,146 @@ namespace DataAccessLayer
             users.Add(new User("206295131", "ccccccbgbfh", 0));
             users.Add(new User("123456789", "ccccccbgbfh", 1));
             users.Add(new User("151515151", "ccccccbgbfh", 2));
-            users.Add(new User("a", "a", 0));
+            users.Add(new User("1", "p", 0));
+            users.Add(new User("2", "p", 1));
+            users.Add(new User("3", "p", 2));
+            users.Add(new User("12", "12", 2));
         }
 
+
+        public void runSql(String sql)
+        {
+            // ----------sql -------------
+
+            string cs = @"server=37.142.52.107;user id=root;database=maxStar;persistsecurityinfo=True";
+
+            MySqlConnection conn = null;
+
+            try
+            {
+                conn = new MySqlConnection(cs);
+                conn.Open();
+
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.Connection = conn;
+                //cmd.CommandText = "INSERT INTO doctors(id, firstName, lastName, salary, gender) VALUES('122', 'sasa', 'sasa', '343453', 'f')";
+                cmd.CommandText = sql;
+                cmd.Prepare();
+
+
+                cmd.ExecuteNonQuery();
+
+            }
+            catch (MySqlException ex)
+            {
+                Console.WriteLine("Error: {0}", ex.ToString());
+
+            }
+            finally
+            {
+                if (conn != null)
+                {
+                    conn.Close();
+                }
+
+            }
+
+        }
+
+
+        public void runSqlSelect(String sql)
+        {
+             string cs = @"server=37.142.52.107;user id=root;database=maxStar;persistsecurityinfo=True";
+
+            MySqlConnection conn = null;
+            MySqlDataReader rdr = null;
+
+            String st = "";
+            try 
+            {
+                conn = new MySqlConnection(cs);
+                conn.Open();
+        
+                string stm = sql;
+                MySqlCommand cmd = new MySqlCommand(stm, conn);
+                rdr = cmd.ExecuteReader();
+
+                while (rdr.Read()) 
+                {
+                    st += rdr.GetInt32(0) + ": " + rdr.GetString(1);
+
+                }
+                    
+            } catch (MySqlException ex) 
+            {
+                Console.WriteLine("Error: {0}",  ex.ToString());
+
+            } finally 
+            {
+                if (rdr != null) 
+                {
+                    rdr.Close();
+                }
+
+                if (conn != null) 
+                {
+                    conn.Close();
+                }
+
+            }
+        }
+        }
         //----------- DOCTOR METHODS -------------
 
         //add new doctor
         public void AddDoctor(Doctor d)
         {
-            doctors.Add(d);
+            //old & busty
+           // doctors.Add(d);
+
+            //cool & awsome!
+            String sql = "INSERT INTO doctors(id, firstName, lastName, salary, gender) VALUES('"+ d.id +"', '"+d.firstName+"', '"+d.lastName+"', '"+d.salary+"', '"+d.gender+"')";
+            runSql(sql);
+
         }
 
         public List<Doctor> SearchDoctorByID(String id)
         {
             var result = from d in doctors
-                         where d.ID == id
+                         where d.id == id
                          select d;
+
+            
+            MySqlConnection conn = null;
+            MySqlDataReader rdr = null;
+
+            string stm = "SELECT * FROM Authors";
+            MySqlCommand cmd = new MySqlCommand(stm, conn);
+            rdr = cmd.ExecuteReader();
+
+            while (rdr.Read())
+            {
+                Console.WriteLine(rdr.GetInt32(0) + ": "
+                    + rdr.GetString(1));
+            }
+
+
 
             return result.ToList<Doctor>();
         }
 
         public bool RemoveDoctorByID(String id)
         {
-            bool isRemoved=false;
+            bool isRemoved = false;
 
             var result = from d in doctors
-                         where d.ID == id
+                         where d.id == id
                          select d;
 
             Doctor[] a = result.ToArray();
 
-            for(int i=0;i<a.Length; i++){
+            for (int i = 0; i < a.Length; i++)
+            {
                 isRemoved = doctors.Remove(a[i]);
             }
 
@@ -120,17 +237,17 @@ namespace DataAccessLayer
 
         public void EditDoctor(String id, Doctor d)
         {
-            List<Doctor> doc = SearchDoctorByID(id);
-            foreach (Doctor c in doc)
-            {
-                c.mergeInfo(d);
-            }
+
+            //cool & awsome!
+            String sql = "UPDATE doctors SET  firstName = '" + d.firstName + "', lastName = '" + d.lastName + "', salary '" + d.salary + "' , gender '" + d.gender + "'  WHERE id='"+id+"'";
+            runSql(sql);
+
         }
 
         public List<Patient> GetAllDoctorsPatients(String id)
         {
             var result = from p in patients
-                         where p.MainDoctor.Equals(id)
+                         where p.mainDoctor.Equals(id)
                          select p;
 
             return result.ToList();
@@ -139,13 +256,38 @@ namespace DataAccessLayer
         public bool DoctorAlreadyExists(String id)
         {
             var result = from d in doctors
-                         where d.ID.Equals(id)
+                         where d.id.Equals(id)
                          select d;
             Doctor[] resultArray = result.ToArray<Doctor>();
 
             if (resultArray.Length == 0)
                 return false;
             return true;
+        }
+
+        public String GetDoctorIDByName(String name)
+        {
+            var result = from d in doctors
+                         where d.name.Equals(name)
+                         select d;
+            Doctor[] resultArray = result.ToArray<Doctor>();
+
+            return resultArray[0].id;
+        }
+
+        public String GetDoctorNameByID(String id)
+        {
+            var result = from d in doctors
+                         where d.id.Equals(id)
+                         select d;
+            Doctor[] resultArray = result.ToArray<Doctor>();
+
+            return resultArray[0].name;
+        }
+
+        public List<Doctor> GetAllDoctors()
+        {
+            return doctors;
         }
 
         //----------- PATIENT METHODS -------------
@@ -161,7 +303,7 @@ namespace DataAccessLayer
             bool isRemoved = false;
 
             var result = from p in patients
-                         where p.ID == id
+                         where p.id == id
                          select p;
 
             Patient[] a = result.ToArray();
@@ -177,7 +319,7 @@ namespace DataAccessLayer
         public List<Patient> SearchPatientByID(String id)
         {
             var result = from p in patients
-                         where p.ID == id
+                         where p.id == id
                          select p;
 
             return result.ToList<Patient>();
@@ -195,12 +337,12 @@ namespace DataAccessLayer
         public void ChangeDoctor(String id)
         {
             var result = from p in patients
-                         where p.MainDoctor.Equals(id)
+                         where p.mainDoctor.Equals(id)
                          select p;
 
             foreach (Patient p in result)
             {
-                p.mergeInfo(new Patient("-1", "-1", "-1", doctors.First<Doctor>().ID, -1, '1'));
+                p.mergeInfo(new Patient("-1", "-1", "-1", doctors.First<Doctor>().id, -1, '1'));
             }
 
         }
@@ -208,9 +350,9 @@ namespace DataAccessLayer
         public bool PatientAlreadyExists(String id)
         {
             var result = from p in patients
-                         where p.ID.Equals(id)
+                         where p.id.Equals(id)
                          select p;
-            
+
             Patient[] resultArray = result.ToArray<Patient>();
 
             if (resultArray.Length == 0)
@@ -218,6 +360,26 @@ namespace DataAccessLayer
             return true;
         }
 
+        public List<Visit> GetPatientVisits(string id)
+        {
+            var result = from v in visits
+                         where v.patientID.Equals(id)
+                         select v;
+            return result.ToList<Visit>();
+        }
+
+        public List<Treatment> GetPatientTreatments(string id)
+        {
+            var result = from t in treatments
+                         where t.patientID.Equals(id)
+                         select t;
+            return result.ToList<Treatment>();
+        }
+
+        public List<Patient> GetAllPatients()
+        {
+            return patients;
+        }
 
         //----------- VISIT METHODS -------------
 
@@ -230,7 +392,7 @@ namespace DataAccessLayer
         public bool VisitAlreadyExists(String id)
         {
             var result = from v in visits
-                         where v.ID.Equals(id)
+                         where v.id.Equals(id)
                          select v;
 
             Visit[] resultArray = result.ToArray<Visit>();
@@ -243,7 +405,7 @@ namespace DataAccessLayer
         public List<Visit> SearchVisitByID(String visitID)
         {
             var result = from v in visits
-                         where v.ID == visitID
+                         where v.id.Equals(visitID)
                          select v;
 
             return result.ToList<Visit>();
@@ -254,7 +416,7 @@ namespace DataAccessLayer
             bool isRemoved = false;
 
             var result = from v in visits
-                         where v.ID == visitID
+                         where v.id.Equals(visitID)
                          select v;
 
             Visit[] a = result.ToArray();
@@ -279,7 +441,7 @@ namespace DataAccessLayer
         public List<Visit> GetVisitsByDate(String s)
         {
             var result = from v in visits
-                         where v.Date.Equals(s)
+                         where v.dateOfVisit.Equals(s)
                          select v;
 
             return result.ToList<Visit>();
@@ -293,10 +455,10 @@ namespace DataAccessLayer
             treatments.Add(t);
         }
 
-        public void EditTreatmentByIdAndStartDate(String id, Treatment treatment)
+        public void EditTreatmentByIdAndStartDate(String patientID, Treatment treatment)
         {
-            var result = from t in SearchTreatmentByID(id)
-                         where t.StartDate.Equals(treatment.StartDate)
+            var result = from t in SearchTreatmentByID(patientID)
+                         where t.dateOfStart.Equals(treatment.dateOfStart)
                          select t;
 
             List<Treatment> tre = result.ToList<Treatment>();
@@ -307,12 +469,12 @@ namespace DataAccessLayer
             }
         }
 
-        public bool RemoveTreatmentByIdAndStartDate(String id, String start)
+        public bool RemoveTreatmentByIdAndStartDate(String patientID, String start)
         {
             bool removed = false;
 
             var result = from t in treatments
-                         where t.ID.Equals(id) && t.StartDate.Equals(start)
+                         where t.patientID.Equals(patientID) && t.dateOfStart.Equals(start)
                          select t;
 
             Treatment[] a = result.ToArray<Treatment>();
@@ -325,19 +487,19 @@ namespace DataAccessLayer
             return removed;
         }
 
-        public List<Treatment> SearchTreatmentByID(String id)
+        public List<Treatment> SearchTreatmentByID(String patientID)
         {
             var result = from t in treatments
-                         where t.ID.Equals(id)
+                         where t.patientID.Equals(patientID)
                          select t;
 
             return result.ToList<Treatment>();
         }
 
-        public List<Treatment> GetAllTreatmentsByDoctorID(String id)
+        public List<Treatment> GetAllTreatmentsByDoctorID(String patientID)
         {
             var result = from t in treatments
-                         where t.Doctor.Equals(id)
+                         where t.createdByDoctor.Equals(patientID)
                          select t;
 
             return result.ToList<Treatment>();
@@ -355,13 +517,58 @@ namespace DataAccessLayer
 
         public bool validate(String user, String pass)
         {
-            var result= from u in users
-                        where u.id.Equals(user) && u.password.Equals(pass)
-                        select u;
+            var result = from u in users
+                         where u.id.Equals(user) && u.password.Equals(pass)
+                         select u;
 
             return ((result.ToArray()).Length > 0); //found matching user
         }
 
+        //return user rank
+        public int getUserRank(String user)
+        {
+            var result = from u in users
+                         where u.id.Equals(user)
+                         select u;
 
+            return ((result.ToList<User>()).First()).rank; //found matching user
+        }
+
+        public User SearchUserByID(string id)
+        {
+            var result = from u in users
+                         where u.id.Equals(id)
+                         select u;
+            return result.ElementAt(0);
+        }
+
+        public void AddUser(String id, String pass, int rank)
+        {
+            users.Add(new User(id, pass, rank));
+        }
+
+        public void ChangePassword(String id, String pass)
+        {
+            var user = from u in users
+                       where u.id.Equals(id)
+                       select u;
+
+            foreach (User usr in user)
+            {
+                usr.password = pass;
+            }
+
+        }
+
+        public bool UserAlreadyExists(String id)
+        {
+            var user = from u in users
+                       where u.id.Equals(id)
+                       select u;
+
+            List<User> usr = user.ToList<User>();
+
+            return usr.Count != 0;
+        }
     }
 }
