@@ -1,0 +1,9 @@
+﻿<Window x:Class="PresentationLayer.Doctor.Treatments"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Previous Treatments" Height="350" Width="652" Closing="Window_Closing">
+    <Border BorderThickness="1" Grid.Row="0" Grid.ColumnSpan="2" 
+            CornerRadius="4,4,4,4" BorderBrush="#FFCECECE" Background="White" Height="277" Width="592" HorizontalAlignment="Stretch">
+        <DataGrid Name="dataTable" ItemsSource="{Binding}" Height="257" Width="542"/>
+    </Border>
+</Window>
